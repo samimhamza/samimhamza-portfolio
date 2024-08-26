@@ -175,35 +175,42 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
+      company: 'Ramaki Group Of Companies',
+      title: 'Senior Softwar Engineer',
       logo: logoPlanetaria,
-      start: '2019',
+      start: 'May 2024',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
+      company: 'Peace Global Logistics',
+      title: 'Software Engineer',
       logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      start: 'Sep 2022',
+      end: 'April 2024',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
+      company: 'Smart Friqi',
+      title: 'Full Stack Developer',
       logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      start: 'July 2021',
+      end: 'Sep 2022',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
+      company: 'TwistedBits ICT',
+      title: 'Web Developer',
       logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      start: 'May 2021',
+      end: 'July 2021',
+    },
+    {
+      company: 'Code9ine ICT',
+      title: 'Web Developer',
+      logo: logoStarbucks,
+      start: '2019',
+      end: 'April 2021',
     },
   ]
 
