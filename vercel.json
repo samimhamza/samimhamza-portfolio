@@ -1,0 +1,38 @@
+{
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "redirects": [
+      {
+        "source": "/cv",
+        "destination": "/cv.pdf"
+      },
+      {
+        "source": "/twitter",
+        "destination": "https://twitter.com/SamimHamza1"
+      },
+      {
+        "source": "/x",
+        "destination": "https://x.com/SamimHamza1"
+      },
+      {
+        "source": "/github",
+        "destination": "https://github.com/samimhamza"
+      },
+      {
+        "source": "/facebook",
+        "destination": "https://www.facebook.com/ahmadsamim.hamzaei"
+      },
+      {
+        "source": "/telegram",
+        "destination": "https://t.me/samim_24"
+      },
+      {
+        "source": "/meeting",
+        "destination": "https://meet.google.com/kpm-jhhd-tnv"
+      },
+      {
+        "source": "/linkedin",
+        "destination": "https://www.linkedin.com/in/ahmad-samim-hamza-115463211"
+      }
+    ]
+  }
