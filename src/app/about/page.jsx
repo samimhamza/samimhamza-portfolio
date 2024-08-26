@@ -11,6 +11,8 @@ import {
   FacebookIcon,
 } from '@/components/SocialIcons'
 import samimhamzaImage from '@/images/samimhamza.jpg'
+import { Button } from '@/components/Button'
+import { ArrowDownIcon } from '../page'
 
 function SocialLink({ className, href, target, children, icon: Icon }) {
   return (
@@ -194,6 +196,15 @@ export default function About() {
             >
               samim.hamza7@gmail.com
             </SocialLink>
+            <Button
+              href="/cv"
+              target="_blank"
+              variant="secondary"
+              className="group mt-6 w-full"
+            >
+              Download CV
+              <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+            </Button>
           </ul>
         </div>
       </div>
