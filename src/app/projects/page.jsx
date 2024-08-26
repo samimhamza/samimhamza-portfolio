@@ -2,47 +2,67 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import unitedLogo from '@/images/logos/united_logo.png'
+import logoGPF from '@/images/logos/gpf_logo.png'
+import logPGL from '@/images/logos/pgl_logo.png'
+import logoTeebAlhoor from '@/images/logos/teebalhoor.svg'
+import logoTglSupplies from '@/images/logos/tglsupplies.png'
+import logoPGT from '@/images/logos/pgt.png'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'United Used Cars Website and MIS',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'Technologies that used in this projects are Laravel, Next.js, Material UI, and MySQL.',
+    link: {
+      href: 'https://unitedtradingcars.com/',
+      label: 'unitedtradingcars.com',
+    },
+    logo: unitedLogo,
   },
   {
-    name: 'Animaginary',
-    description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+    name: 'PGL ERP System',
+    description: 'ERP System for Peace Global Logistics.',
+    link: { href: 'https://pglsystem.com/', label: 'pglsystem.com' },
+    logo: logPGL,
   },
   {
-    name: 'HelioStream',
-    description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+    name: 'TGL Supplies System',
+    description: `High performance website and MIS. This Project was built with technologies such as Node.js and Express.js for the backend,
+       React.js for the frontend, and PostgreSQL for the database.`,
+    link: {
+      href: 'https://tglsupplies.com/',
+      label: 'tglsupplies.com',
+    },
+    logo: logoTglSupplies,
   },
   {
-    name: 'cosmOS',
+    name: 'Charity Management System',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
+      'I built this Management System For a charity based on Afghanistan.',
+    link: {
+      href: 'https://github.com/samimhamza/gpf_frontend_mantine',
+      label: 'github.com',
+    },
+    logo: logoGPF,
   },
   {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+    name: 'TeebAlhoor ERP System',
+    description: 'Complex ERP system for a TeebAlhoor Company base on UAE.',
+    link: {
+      href: 'https://github.com/samimhamza/teebalhoorfrontend',
+      label: 'github.com',
+    },
+    logo: logoTeebAlhoor,
+  },
+  {
+    name: 'Peace Global Tech Website',
+    description: 'Our Department Website on Peace Global Logistics Company.',
+    link: {
+      href: 'https://peaceglobaltech.com/',
+      label: 'peaceglobaltech.com',
+    },
+    logo: logoPGT,
   },
 ]
 
@@ -59,14 +79,14 @@ function LinkIcon(props) {
 
 export const metadata = {
   title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description: 'Project That I have built and contributed.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="Project That I have built and contributed ."
+      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of."
     >
       <ul
         role="list"
@@ -75,12 +95,35 @@ export default function Projects() {
         {projects.map((project) => (
           <Card as="li" key={project.name}>
             <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image
-                src={project.logo}
-                alt=""
-                className="h-8 w-8"
-                unoptimized
-              />
+              {project.link.label === 'unitedtradingcars.com' ? (
+                <Image
+                  src={project.logo}
+                  alt=""
+                  className="h-5 w-10"
+                  unoptimized
+                />
+              ) : project.link.label === 'pglsystem.com' ? (
+                <Image
+                  src={project.logo}
+                  alt=""
+                  className="h-4 w-10"
+                  unoptimized
+                />
+              ) : project.link.label === 'pglsystem.com' ? (
+                <Image
+                  src={project.logo}
+                  alt=""
+                  className="h-4 w-10"
+                  unoptimized
+                />
+              ) : (
+                <Image
+                  src={project.logo}
+                  alt=""
+                  className="h-8 w-8"
+                  unoptimized
+                />
+              )}
             </div>
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
               <Card.Link href={project.link.href}>{project.name}</Card.Link>
