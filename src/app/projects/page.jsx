@@ -48,7 +48,7 @@ export const projects = [
   },
   {
     name: 'TeebAlhoor ERP System',
-    description: 'Complex ERP system for a TeebAlhoor Company base on UAE.',
+    description: 'Complex ERP system for a TeebAlhoor Company based on UAE.',
     link: {
       href: 'https://github.com/samimhamza/teebalhoorfrontend',
       label: 'github.com',
