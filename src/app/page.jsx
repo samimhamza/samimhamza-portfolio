@@ -12,15 +12,16 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import logoPGL from '@/images/logos/pgl.png'
+import logoSmartFriqi from '@/images/logos/smart_friqi.svg'
+import logoRamaki from '@/images/logos/ramaki_logo.png'
+import logoTwistedBits from '@/images/logos/twisted_bits.png'
+import logoCode9ine from '@/images/logos/code9ine.png'
+// import image1 from '@/images/photos/image-1.jpg'
+// import image2 from '@/images/photos/image-2.jpg'
+// import image3 from '@/images/photos/image-3.jpg'
+// import image4 from '@/images/photos/image-4.jpg'
+// import image5 from '@/images/photos/image-5.jpg'
 // import { getAllProjects } from '@/lib/projects'
 import { formatDate } from '@/lib/formatDate'
 import { projects } from './projects/page'
@@ -178,7 +179,7 @@ function Resume() {
     {
       company: 'Ramaki Group Of Companies',
       title: 'Senior Softwar Engineer',
-      logo: logoPlanetaria,
+      logo: logoRamaki,
       start: 'May 2024',
       end: {
         label: 'Present',
@@ -188,28 +189,28 @@ function Resume() {
     {
       company: 'Peace Global Logistics',
       title: 'Software Engineer',
-      logo: logoAirbnb,
+      logo: logoPGL,
       start: 'Sep 2022',
       end: 'April 2024',
     },
     {
       company: 'Smart Friqi',
       title: 'Full Stack Developer',
-      logo: logoFacebook,
+      logo: logoSmartFriqi,
       start: 'July 2021',
       end: 'Sep 2022',
     },
     {
       company: 'TwistedBits ICT',
       title: 'Web Developer',
-      logo: logoStarbucks,
+      logo: logoTwistedBits,
       start: 'May 2021',
       end: 'July 2021',
     },
     {
       company: 'Code9ine ICT',
       title: 'Web Developer',
-      logo: logoStarbucks,
+      logo: logoCode9ine,
       start: '2019',
       end: 'April 2021',
     },
@@ -226,7 +227,12 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="/cv" target="_blank" variant="secondary" className="group mt-6 w-full">
+      <Button
+        href="/cv"
+        target="_blank"
+        variant="secondary"
+        className="group mt-6 w-full"
+      >
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
