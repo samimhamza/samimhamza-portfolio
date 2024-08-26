@@ -4,7 +4,7 @@ import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import unitedLogo from '@/images/logos/united_logo.png'
 import logoGPF from '@/images/logos/gpf_logo.png'
-import logPGL from '@/images/logos/pgl_logo.png'
+import logPGL from '@/images/logos/pgl.png'
 import logoTeebAlhoor from '@/images/logos/teebalhoor.svg'
 import logoTglSupplies from '@/images/logos/tglsupplies.png'
 import logoPGT from '@/images/logos/pgt.png'
@@ -100,20 +100,6 @@ export default function Projects() {
                   src={project.logo}
                   alt=""
                   className="h-5 w-10"
-                  unoptimized
-                />
-              ) : project.link.label === 'pglsystem.com' ? (
-                <Image
-                  src={project.logo}
-                  alt=""
-                  className="h-4 w-10"
-                  unoptimized
-                />
-              ) : project.link.label === 'pglsystem.com' ? (
-                <Image
-                  src={project.logo}
-                  alt=""
-                  className="h-4 w-10"
                   unoptimized
                 />
               ) : (
