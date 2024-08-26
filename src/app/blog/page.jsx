@@ -37,13 +37,13 @@ export default function Blog() {
     >
       <div className="space-y-20">
         {/* <BlogSection > */}
-          <Appearance
+          {/* <Appearance
             href="#"
             title="In space, no one can watch you stream — until now"
             description="A technical deep-dive into HelioStream, the real-time streaming library I wrote for transmitting live video back to Earth."
             event="SysConf 2021"
             cta="Watch video"
-          />
+          /> */}
           {/*<Appearance
             href="#"
             title="Lessons learned from our first product recall"

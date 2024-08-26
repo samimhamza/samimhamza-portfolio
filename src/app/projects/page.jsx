@@ -9,7 +9,7 @@ import logoTeebAlhoor from '@/images/logos/teebalhoor.svg'
 import logoTglSupplies from '@/images/logos/tglsupplies.png'
 import logoPGT from '@/images/logos/pgt.png'
 
-const projects = [
+export const projects = [
   {
     name: 'United Used Cars Website and MIS',
     description:
