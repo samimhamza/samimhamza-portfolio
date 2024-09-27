@@ -25,7 +25,7 @@ function Tool({ title, href, children }) {
 
 export const metadata = {
   title: 'Skills',
-  description: "Skills that I'm expert in",
+  description: "My Skills",
 }
 
 export default function Skills() {
@@ -49,7 +49,7 @@ export default function Skills() {
   }
 
   return (
-    <SimpleLayout title="Skills that I'm expert in" intro="">
+    <SimpleLayout title="My Skills" intro="">
       <div className="space-y-20">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div>
