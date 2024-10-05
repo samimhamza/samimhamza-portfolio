@@ -25,7 +25,7 @@ function Tool({ title, href, children }) {
 
 export const metadata = {
   title: 'Skills',
-  description: "My Skills",
+  description: 'My Skills',
 }
 
 export default function Skills() {
@@ -36,87 +36,87 @@ export default function Skills() {
       'JavaScript',
       'TailwindCSS',
       'Bootstrap',
-      'jQuery',
+      'Alpine.js',
       'React',
       'Next.js',
       'Vue',
       'Nuxt.js',
     ],
-    backend: ['PHP', 'Laravel', 'Python', 'Django', 'NestJS', 'Java'],
-    database: ['MySQL', 'PostgreSQL', 'MongoDB', 'SQLite'],
+    backend: ['PHP', 'Laravel', 'NestJS', 'Express.js', 'Python', 'Django'],
+    database: ['MySQL', 'PostgreSQL', 'SQLite'],
     mobile: ['Dart', 'Flutter'],
-    general: ['Git', 'GitHub', 'Linux', 'Docker', 'Kubernetes', 'Firebase'],
+    general: ['Git', 'GitHub', 'Docker', 'Kubernetes', 'Firebase'],
   }
 
   return (
     <SimpleLayout title="My Skills" intro="">
       <div className="space-y-20">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <div>
-              <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
-                Frontend Development Skills
-              </h2>
-              <ul className="list-inside list-disc">
-                {skills.frontend.map((skill) => (
-                  <li key={skill} className="text-zinc-600 dark:text-zinc-400">
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
-                Backend Development Skills
-              </h2>
-              <ul className="list-inside list-disc">
-                {skills.backend.map((skill) => (
-                  <li key={skill} className="text-zinc-600 dark:text-zinc-400">
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
-                Database Development Skills
-              </h2>
-              <ul className="list-inside list-disc">
-                {skills.database.map((skill) => (
-                  <li key={skill} className="text-zinc-600 dark:text-zinc-400">
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
-                Mobile App Development Skills
-              </h2>
-              <ul className="list-inside list-disc">
-                {skills.mobile.map((skill) => (
-                  <li key={skill} className="text-zinc-600 dark:text-zinc-400">
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
-                General Skills
-              </h2>
-              <ul className="list-inside list-disc">
-                {skills.general.map((skill) => (
-                  <li key={skill} className="text-zinc-600 dark:text-zinc-400">
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </div>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div>
+            <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
+              Frontend Development Skills
+            </h2>
+            <ul className="list-inside list-disc">
+              {skills.frontend.map((skill) => (
+                <li key={skill} className="text-zinc-600 dark:text-zinc-400">
+                  {skill}
+                </li>
+              ))}
+            </ul>
           </div>
+
+          <div>
+            <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
+              Backend Development Skills
+            </h2>
+            <ul className="list-inside list-disc">
+              {skills.backend.map((skill) => (
+                <li key={skill} className="text-zinc-600 dark:text-zinc-400">
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
+              Database Development Skills
+            </h2>
+            <ul className="list-inside list-disc">
+              {skills.database.map((skill) => (
+                <li key={skill} className="text-zinc-600 dark:text-zinc-400">
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
+              Mobile App Development Skills
+            </h2>
+            <ul className="list-inside list-disc">
+              {skills.mobile.map((skill) => (
+                <li key={skill} className="text-zinc-600 dark:text-zinc-400">
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
+              General Skills
+            </h2>
+            <ul className="list-inside list-disc">
+              {skills.general.map((skill) => (
+                <li key={skill} className="text-zinc-600 dark:text-zinc-400">
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
         {/* <ToolsSection title="Workstation">
           <Tool title="16” MacBook Pro, M1 Max, 64GB RAM (2021)">
             I was using an Intel-based 16” MacBook Pro prior to this and the

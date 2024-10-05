@@ -10,7 +10,7 @@ import {
   XIcon,
   FacebookIcon,
 } from '@/components/SocialIcons'
-import samimhamzaImage from '@/images/samimhamza.jpg'
+import samimhamzaImage from '@/images/ahmadsamimhamza.jpg'
 import { Button } from '@/components/Button'
 import { ArrowDownIcon } from '../page'
 
@@ -42,8 +42,7 @@ function MailIcon(props) {
 
 export const metadata = {
   title: 'About',
-  description:
-    'I’m Ahmad Samim Hamza. A Futurestic Software Engineer',
+  description: 'I’m Ahmad Samim Hamza. A Futurestic Software Engineer',
 }
 
 export default function About() {
@@ -124,27 +123,34 @@ export default function About() {
               </li>
             </ul>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
-              Skills
+              Top Skills
             </h2>
-            <p className="mb-4 text-base text-zinc-600 dark:text-zinc-400">
-              <strong>Frontend Development:</strong> HTML, CSS, JavaScript,
-              TailwindCSS, Bootstrap, jQuery, React, Next.js, Vue, Nuxt.js
-            </p>
-            <p className="mb-4 text-base text-zinc-600 dark:text-zinc-400">
-              <strong>Backend Development:</strong> PHP, Laravel, Python,
-              Django, NestJS, Java
-            </p>
-            <p className="mb-4 text-base text-zinc-600 dark:text-zinc-400">
-              <strong>Database Development:</strong> MySQL, PostgreSQL, MongoDB,
-              SQLite
-            </p>
-            <p className="mb-4 text-base text-zinc-600 dark:text-zinc-400">
-              <strong>Mobile App Development:</strong> Dart, Flutter
-            </p>
-            <p className="mb-4 text-base text-zinc-600 dark:text-zinc-400">
-              <strong>General Skills:</strong> Git, GitHub, Linux, Docker,
-              Kubernetes, Firebase
-            </p>
+            <ul className="mb-4 list-inside list-disc text-base text-zinc-600 dark:text-zinc-400">
+              <li>
+                <strong>Laravel</strong>
+              </li>
+              <li>
+                <strong>NestJs</strong>
+              </li>
+              <li>
+                <strong>PostgreSQL</strong>
+              </li>
+              <li>
+                <strong>MySQL</strong>
+              </li>
+              <li>
+                <strong>React.js</strong>
+              </li>
+              <li>
+                <strong>Next.js</strong>
+              </li>
+              <li>
+                <strong>Livewire</strong>
+              </li>
+              <li>
+                <strong>FLutter</strong>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="lg:pl-20">

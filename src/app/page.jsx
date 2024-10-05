@@ -282,6 +282,9 @@ export default async function Home() {
             committed to academic excellence and eager to contribute to
             groundbreaking projects.
           </p>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            <strong>Top Skills: </strong> Laravel, NestJS, PostgreSQL, MySQL, React.js, Next.js, Livewire, Flutter
+          </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://www.linkedin.com/in/ahmad-samim-hamza-115463211"
