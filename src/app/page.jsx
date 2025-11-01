@@ -181,7 +181,7 @@ function Resume() {
       title: 'Senior Softwar Engineer',
       logo: logoRamaki,
       start: 'May 2024',
-      end: 'April 2025',
+      end: 'July 2025',
       // end: {
       //   label: 'Present',
       //   dateTime: new Date().getFullYear().toString(),
