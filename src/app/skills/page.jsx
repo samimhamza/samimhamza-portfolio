@@ -43,7 +43,7 @@ export default function Skills() {
       'Vue',
       'Nuxt.js',
     ],
-    backend: ['PHP', 'Laravel', 'NestJS', 'Express.js', 'Python', 'Django'],
+    backend: ['PHP', 'Laravel', 'NestJS', 'Express.js', 'Python', 'Java', 'Spring Boot'],
     database: ['MySQL', 'PostgreSQL', 'SQLite'],
     mobile: ['Dart', 'Flutter'],
     general: ['Git', 'GitHub', 'Docker', 'Kubernetes', 'Firebase'],

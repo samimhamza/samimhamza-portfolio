@@ -79,7 +79,7 @@ export default function About() {
             <ul className="mb-4 list-inside list-disc space-y-4 text-base text-zinc-600 dark:text-zinc-400">
               <li>
                 <strong>Senior Software Engineer</strong> at Ramaki Group of
-                Companies (05/2024 – Present): Responsible for database analysis
+                Companies (05/2024 – 07/2025): Responsible for database analysis
                 and design, developing GraphQL APIs, and frontend design and
                 development.
               </li>
@@ -114,6 +114,10 @@ export default function About() {
             </h2>
             <ul className="mb-4 list-inside list-disc space-y-4 text-base text-zinc-600 dark:text-zinc-400">
               <li>
+                <strong>Master degree in Artificial Intelligence</strong> at University 
+                of Jyväskylä (2025 – Present)
+              </li>
+              <li>
                 <strong>Bachelor in Software Engineering</strong> from Kabul
                 University (2017 – 2021)
               </li>
@@ -130,7 +134,7 @@ export default function About() {
                 <strong>Laravel</strong>
               </li>
               <li>
-                <strong>NestJs</strong>
+                <strong>Spring Boot</strong>
               </li>
               <li>
                 <strong>PostgreSQL</strong>
