@@ -13,7 +13,7 @@ export const projects = [
   {
     name: 'United Used Cars Website and MIS',
     description:
-      'Technologies that used in this projects are Laravel, Next.js, Material UI, and MySQL.',
+      'Full website and management information system for a used car trading company. Built with Laravel, Next.js, Material UI, and MySQL.',
     link: {
       href: 'https://unitedtradingcars.com/',
       label: 'unitedtradingcars.com',
@@ -22,14 +22,15 @@ export const projects = [
   },
   {
     name: 'PGL ERP System',
-    description: 'ERP System for Peace Global Logistics.',
+    description:
+      'ERP system for Peace Global Logistics covering logistics, shipments, HR, and inventory modules. Built with NestJS, React, Next.js, and PostgreSQL.',
     link: { href: 'https://pglsystem.com/', label: 'pglsystem.com' },
     logo: logPGL,
   },
   {
     name: 'TGL Supplies System',
-    description: `High performance website and MIS. This Project was built with technologies such as Node.js and Express.js for the backend,
-       React.js for the frontend, and PostgreSQL for the database.`,
+    description:
+      'High-performance website and management information system built with Node.js and Express.js for the backend, React.js for the frontend, and PostgreSQL for the database.',
     link: {
       href: 'https://tglsupplies.com/',
       label: 'tglsupplies.com',
@@ -39,7 +40,7 @@ export const projects = [
   {
     name: 'Charity Management System',
     description:
-      'I built this Management System For a charity based on Afghanistan.',
+      'Charity management system built for an Afghanistan-based non-profit organization.',
     link: {
       href: 'https://github.com/samimhamza/gpf_frontend_mantine',
       label: 'github.com',
@@ -48,7 +49,8 @@ export const projects = [
   },
   {
     name: 'TeebAlhoor ERP System',
-    description: 'Complex ERP system for a TeebAlhoor Company based on UAE.',
+    description:
+      'Complex ERP system for TeebAlhoor, a UAE-based trading company, built with Laravel, Nuxt.js, and PostgreSQL.',
     link: {
       href: 'https://github.com/samimhamza/teebalhoorfrontend',
       label: 'github.com',
@@ -57,7 +59,8 @@ export const projects = [
   },
   {
     name: 'Peace Global Tech Website',
-    description: 'Our Department Website on Peace Global Logistics Company.',
+    description:
+      'Department website for the tech division of Peace Global Logistics.',
     link: {
       href: 'https://peaceglobaltech.com/',
       label: 'peaceglobaltech.com',
@@ -79,14 +82,14 @@ function LinkIcon(props) {
 
 export const metadata = {
   title: 'Projects',
-  description: 'Project That I have built and contributed.',
+  description: 'Projects that I have built and contributed to.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Project That I have built and contributed ."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of."
+      title="Projects that I have built and contributed to."
+      intro="I have worked on many projects over the years, but these are the ones that I am most proud of."
     >
       <ul
         role="list"

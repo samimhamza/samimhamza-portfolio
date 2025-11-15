@@ -16,14 +16,6 @@ import logoPGL from '@/images/logos/pgl.png'
 import logoSmartFriqi from '@/images/logos/smart_friqi.svg'
 import logoRamaki from '@/images/logos/ramaki_logo.png'
 import logoTwistedBits from '@/images/logos/twisted_bits.png'
-import logoCode9ine from '@/images/logos/code9ine.png'
-// import image1 from '@/images/photos/image-1.jpg'
-// import image2 from '@/images/photos/image-2.jpg'
-// import image3 from '@/images/photos/image-3.jpg'
-// import image4 from '@/images/photos/image-4.jpg'
-// import image5 from '@/images/photos/image-5.jpg'
-// import { getAllProjects } from '@/lib/projects'
-import { formatDate } from '@/lib/formatDate'
 import { projects } from './projects/page'
 
 function MailIcon(props) {
@@ -178,7 +170,7 @@ function Resume() {
   let resume = [
     {
       company: 'Ramaki Group Of Companies',
-      title: 'Senior Softwar Engineer',
+      title: 'Senior Software Engineer',
       logo: logoRamaki,
       start: 'May 2024',
       end: 'July 2025',
@@ -207,13 +199,6 @@ function Resume() {
       logo: logoTwistedBits,
       start: 'May 2021',
       end: 'July 2021',
-    },
-    {
-      company: 'Code9ine ICT',
-      title: 'Web Developer',
-      logo: logoCode9ine,
-      start: '2019',
-      end: 'April 2021',
     },
   ]
 
@@ -279,12 +264,15 @@ export default async function Home() {
             Software Engineer & Backend Developer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Ahmad Samim Hamza, a Software Engineer based in Jyväskylä, Finland. I am
-            committed to academic excellence and eager to contribute to
-            groundbreaking projects.
+            I’m Ahmad Samim Hamza, a Software Engineer based in Jyväskylä,
+            Finland. With over 4 years of experience building enterprise
+            applications, ERP systems, and e-commerce platforms. I enjoy
+            designing robust backend architectures, working with relational
+            databases, and delivering clean, maintainable code.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            <strong>Top Skills: </strong> Laravel, Spring Boot, PostgreSQL, React.js, Next.js, Livewire
+            <strong>Top Skills: </strong> Laravel, Spring Boot, PostgreSQL,
+            React.js, Next.js, Livewire
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

@@ -42,7 +42,8 @@ function MailIcon(props) {
 
 export const metadata = {
   title: 'About',
-  description: 'I’m Ahmad Samim Hamza, a Software Engineer and Backend Developer.',
+  description:
+    'I’m Ahmad Samim Hamza, a Software Engineer and Backend Developer.',
 }
 
 export default function About() {
@@ -65,37 +66,47 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’m a Software Engineer with more than 4 years of professional experience building
-              enterprise applications, ERP systems, MIS systems, and e-commerce solutions.
-              I enjoy solving engineering challenges, designing robust system architectures,
-              and writing clean, maintainable code. My work spans backend, full-stack, and database design,
-              and I’m currently expanding into AI and machine learning through my Master's studies.
+              I’m a Software Engineer with more than 4 years of professional
+              experience building enterprise applications, ERP systems, MIS
+              systems, and e-commerce solutions. I enjoy solving engineering
+              challenges, designing robust system architectures, and writing
+              clean, maintainable code. My work spans backend, full-stack, and
+              database design, and I’m currently expanding into AI and machine
+              learning through my Master&#39;s studies.
             </p>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
               Work Experience
             </h2>
             <ul className="mb-4 list-inside list-disc space-y-4 text-base text-zinc-600 dark:text-zinc-400">
               <li>
-                <strong>Senior Software Engineer</strong> at Ramaki Group of Companies (05/2024 – 07/2025):
-                Guided and coordinated a team of 8 engineers during the development of an e-commerce platform.
-                Responsible for database analysis and design, developing REST and GraphQL APIs, implementing
-                backend logic, and writing unit, integration, and feature tests.
+                <strong>Senior Software Engineer</strong> at Ramaki Group of
+                Companies (05/2024 – 07/2025): Guided and coordinated a team of
+                8 engineers during the development of an e-commerce platform.
+                Responsible for database analysis and design, developing REST
+                and GraphQL APIs, implementing backend logic, and writing unit,
+                integration, and feature tests.
               </li>
               <li>
-                <strong>Software Engineer</strong> at Peace Global Logistics (09/2022 – 04/2024): Developed
-                logistics and supply-chain modules using NestJS, React, and Next.js; designed PostgreSQL
-                databases and optimized complex queries; implemented reusable UI components in React + Tailwind;
-                and collaborated with cross-functional teams to deliver ERP features for 200+ daily users.
+                <strong>Software Engineer</strong> at Peace Global Logistics
+                (09/2022 – 04/2024): Developed logistics and supply-chain
+                modules using NestJS, React, and Next.js; designed PostgreSQL
+                databases and optimized complex queries; implemented reusable UI
+                components in React + Tailwind; and collaborated with
+                cross-functional teams to deliver ERP features for 200+ daily
+                users.
               </li>
               <li>
-                <strong>Full Stack Developer</strong> at Smart Friqi (26/07/2021 – 20/09/2022): Built ERP
-                modules using Laravel, Nuxt.js, and PostgreSQL; added real-time functionality with WebSockets;
-                and developed dashboards and admin interfaces for business operations.
+                <strong>Full Stack Developer</strong> at Smart Friqi (26/07/2021
+                – 20/09/2022): Built ERP modules using Laravel, Nuxt.js, and
+                PostgreSQL; added real-time functionality with WebSockets; and
+                developed dashboards and admin interfaces for business
+                operations.
               </li>
               <li>
-                <strong>Web Developer</strong> at TwistedBits ICT (01/05/2021 – 15/07/2021): Built two
-                management information systems using PHP, JavaScript, Laravel, and Vue.js, delivering projects
-                under tight deadlines with a small team.
+                <strong>Web Developer</strong> at TwistedBits ICT (01/05/2021 –
+                15/07/2021): Built two management information systems using PHP,
+                JavaScript, Laravel, and Vue.js, delivering projects under tight
+                deadlines with a small team.
               </li>
             </ul>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
@@ -103,12 +114,14 @@ export default function About() {
             </h2>
             <ul className="mb-4 list-inside list-disc space-y-4 text-base text-zinc-600 dark:text-zinc-400">
               <li>
-                <strong>Master’s Degree in Artificial Intelligence</strong> at the University of Jyväskylä
-                (08/2025 – Present)
+                <strong>Master’s Degree in Artificial Intelligence</strong> at
+                the University of Jyväskylä (08/2025 – Present)
               </li>
               <li>
-                <strong>Bachelor of Computer Science (Software Engineering)</strong> from Kabul University
-                (2017 – 2021)
+                <strong>
+                  Bachelor of Computer Science (Software Engineering)
+                </strong>{' '}
+                from Kabul University (2017 – 2021)
               </li>
             </ul>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
