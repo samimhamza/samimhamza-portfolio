@@ -30,17 +30,18 @@ export const metadata = {
 
 export default function Skills() {
   const skills = {
-    frontend: [
-      'React',
-      'Next.js',
-      'Livewire',
-      'Vue',
-      'Nuxt.js',
-      'TailwindCSS',
-    ],
+    frontend: ['React', 'Next.js', 'Livewire', 'Vue', 'Nuxt.js', 'TailwindCSS'],
     backend: ['Laravel', 'NestJS', 'Express.js', 'Django', 'Spring Boot'],
     database: ['MySQL', 'PostgreSQL', 'SQLite'],
-    cloud: ['EC2', 'S3', 'RDS', 'Lambda', 'DynamoDB','API Gateway', 'CloudWatch'],
+    cloud: [
+      'EC2',
+      'S3',
+      'RDS',
+      'Lambda',
+      'DynamoDB',
+      'API Gateway',
+      'CloudWatch',
+    ],
     tools: ['Git', 'GitHub', 'Docker', 'Kubernetes', 'Firebase', 'Linux'],
   }
 
@@ -76,10 +77,10 @@ export default function Skills() {
 
           <div>
             <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
-              Database Development Skills
+              Cloud / AWS
             </h2>
             <ul className="list-inside list-disc">
-              {skills.database.map((skill) => (
+              {skills.cloud.map((skill) => (
                 <li key={skill} className="text-zinc-600 dark:text-zinc-400">
                   {skill}
                 </li>
@@ -89,10 +90,10 @@ export default function Skills() {
 
           <div>
             <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
-              Cloud / AWS
+              Database Development Skills
             </h2>
             <ul className="list-inside list-disc">
-              {skills.cloud.map((skill) => (
+              {skills.database.map((skill) => (
                 <li key={skill} className="text-zinc-600 dark:text-zinc-400">
                   {skill}
                 </li>
