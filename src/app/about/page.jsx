@@ -62,17 +62,17 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Ahmad Samim Hamza. a Software Engineer and Backend Developer.
+            Samim Hamza. A Software Engineer and Backend Developer.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’m a Software Engineer with more than 4 years of professional
-              experience building enterprise applications, ERP systems, MIS
-              systems, and e-commerce solutions. I enjoy solving engineering
-              challenges, designing robust system architectures, and writing
-              clean, maintainable code. My work spans backend, full-stack, and
-              database design, and I’m currently expanding into AI and machine
-              learning through my Master&#39;s studies.
+              Experienced Software Engineer with more than 4 years of
+              professional experience building enterprise applications, ERP
+              systems, MIS systems, and e-commerce solutions. I enjoy solving
+              engineering challenges, designing robust system architectures, and
+              writing clean, maintainable code. My work spans backend,
+              full-stack, and database design, and I’m currently expanding into
+              AI and machine learning through my Master&#39;s studies.
             </p>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
               Work Experience
