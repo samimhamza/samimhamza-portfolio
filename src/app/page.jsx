@@ -276,7 +276,7 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Senior Software Engineer
+            Software Engineer & Backend Developer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m Ahmad Samim Hamza, a Software Engineer based in Jyväskylä, Finland. I am
@@ -284,7 +284,7 @@ export default async function Home() {
             groundbreaking projects.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            <strong>Top Skills: </strong> Laravel, Spring Boot, PostgreSQL, MySQL, React.js, Next.js, Livewire, Flutter
+            <strong>Top Skills: </strong> Laravel, Spring Boot, PostgreSQL, React.js, Next.js, Livewire
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

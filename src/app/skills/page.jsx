@@ -31,22 +31,17 @@ export const metadata = {
 export default function Skills() {
   const skills = {
     frontend: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'TailwindCSS',
-      'Livewire',
-      'Alpine.js',
       'React',
       'Next.js',
-      'Bootstrap',
+      'Livewire',
       'Vue',
       'Nuxt.js',
+      'TailwindCSS',
     ],
-    backend: ['PHP', 'Laravel', 'NestJS', 'Express.js', 'Python', 'Java', 'Spring Boot'],
+    backend: ['Laravel', 'NestJS', 'Express.js', 'Django', 'Spring Boot'],
     database: ['MySQL', 'PostgreSQL', 'SQLite'],
-    mobile: ['Dart', 'Flutter'],
-    general: ['Git', 'GitHub', 'Docker', 'Kubernetes', 'Firebase'],
+    cloud: ['EC2', 'S3', 'RDS', 'Lambda', 'DynamoDB','API Gateway', 'CloudWatch'],
+    tools: ['Git', 'GitHub', 'Docker', 'Kubernetes', 'Firebase', 'Linux'],
   }
 
   return (
@@ -94,10 +89,10 @@ export default function Skills() {
 
           <div>
             <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
-              Mobile App Development Skills
+              Cloud / AWS
             </h2>
             <ul className="list-inside list-disc">
-              {skills.mobile.map((skill) => (
+              {skills.cloud.map((skill) => (
                 <li key={skill} className="text-zinc-600 dark:text-zinc-400">
                   {skill}
                 </li>
@@ -107,10 +102,10 @@ export default function Skills() {
 
           <div>
             <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
-              General Skills
+              Tools
             </h2>
             <ul className="list-inside list-disc">
-              {skills.general.map((skill) => (
+              {skills.tools.map((skill) => (
                 <li key={skill} className="text-zinc-600 dark:text-zinc-400">
                   {skill}
                 </li>
