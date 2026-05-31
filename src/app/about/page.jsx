@@ -65,7 +65,7 @@ export default function About() {
             Samim Hamza. An AI Engineer and Software Developer.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-            <p>Software engineer and Master's student in Artificial Intelligence at the
+            <p>Software engineer and Master&apos;s student in Artificial Intelligence at the
             University of Jyväskylä, with 4+ years of experience building production
             systems across full-stack, backend, and ERP domains.</p>
 
@@ -80,7 +80,7 @@ export default function About() {
             <ul className="mb-4 list-inside list-disc space-y-4 text-base text-zinc-600 dark:text-zinc-400">
               <li>
                 <strong>Summer Trainee, Software Development Specialist</strong> at Konecranes
-                (05/2026 – Present): Developing a production-grade AI Chatbot for Konecranes'
+                (05/2026 – Present): Developing a production-grade AI Chatbot for Konecranes&apos;
                 internal systems using LangGraph, LangChain, and Retrieval-Augmented Generation
                 (RAG) architecture. Implementing document parsing and ingestion pipelines using
                 Docling to process enterprise knowledge sources into a PostgreSQL-backed store,

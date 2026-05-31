@@ -271,7 +271,7 @@ export default async function Home() {
             Software Engineer | AI Engineer | MSc in Artificial Intelligence
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Software engineer and Master's student in Artificial Intelligence at the University of Jyväskylä, with 4+ years
+            Software engineer and Master&apos;s student in Artificial Intelligence at the University of Jyväskylä, with 4+ years
             of experience building production systems across full-stack, backend, and ERP domains. Currently applying AI
             skills in an industry setting — developing RAG pipelines and LLM-based chatbots at Konecranes using
             LangChain and LangGraph. I bring a rare combination of solid engineering foundations and growing applied
