@@ -15,7 +15,7 @@ import {
 import logoPGL from '@/images/logos/pgl.png'
 import logoSmartFriqi from '@/images/logos/smart_friqi.svg'
 import logoRamaki from '@/images/logos/ramaki_logo.png'
-import logoKonecranes from '@/images/logos/Konecranes_Logo.png'
+import logoKonecranes from '@/images/logos/konecranes_logo.jpg'
 import logoTwistedBits from '@/images/logos/twisted_bits.png'
 import { projects } from './projects/page'
 
