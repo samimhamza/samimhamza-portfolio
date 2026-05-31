@@ -43,7 +43,7 @@ function MailIcon(props) {
 export const metadata = {
   title: 'About',
   description:
-    'I’m Ahmad Samim Hamza, a Software Engineer and Backend Developer.',
+    'I’m Ahmad Samim Hamza, a Software and AI Engineer.',
 }
 
 export default function About() {
@@ -62,22 +62,31 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Samim Hamza. A Software Engineer and Backend Developer.
+            Samim Hamza. An AI Engineer and Software Developer.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-            <p>
-              Experienced Software Engineer with more than 4 years of
-              professional experience building enterprise applications, ERP
-              systems, MIS systems, and e-commerce solutions. I enjoy solving
-              engineering challenges, designing robust system architectures, and
-              writing clean, maintainable code. My work spans backend,
-              full-stack, and database design, and I’m currently expanding into
-              AI and machine learning through my Master&#39;s studies.
-            </p>
+            <p>Software engineer and Master's student in Artificial Intelligence at the
+            University of Jyväskylä, with 4+ years of experience building production
+            systems across full-stack, backend, and ERP domains.</p>
+
+            <p>Currently applying AI skills in an industry setting — developing RAG
+            pipelines and LLM-based chatbots at Konecranes using LangChain and LangGraph.
+            I bring a rare combination of solid engineering foundations and growing applied
+            ML expertise, with hands-on experience in PyTorch, TensorFlow, and scalable
+            API development.</p>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
               Work Experience
             </h2>
             <ul className="mb-4 list-inside list-disc space-y-4 text-base text-zinc-600 dark:text-zinc-400">
+              <li>
+                <strong>Summer Trainee, Software Development Specialist</strong> at Konecranes
+                (05/2026 – Present): Developing a production-grade AI Chatbot for Konecranes'
+                internal systems using LangGraph, LangChain, and Retrieval-Augmented Generation
+                (RAG) architecture. Implementing document parsing and ingestion pipelines using
+                Docling to process enterprise knowledge sources into a PostgreSQL-backed store,
+                and building RESTful APIs in Python to expose chatbot functionality and integrate
+                with existing internal systems.
+              </li>
               <li>
                 <strong>Senior Software Engineer</strong> at Ramaki Group of
                 Companies (05/2024 – 07/2025): Guided and coordinated a team of

@@ -169,6 +169,13 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
+      company: 'Konecranes',
+      title: 'Summer Trainee, Software Development Specialist',
+      logo: logoKonecranes, // add import at top
+      start: 'May 2026',
+      end: { label: 'Present', dateTime: new Date().getFullYear().toString() },
+    },
+    {
       company: 'Ramaki Group Of Companies',
       title: 'Senior Software Engineer',
       logo: logoRamaki,
@@ -261,18 +268,18 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Software Engineer & Backend Developer
+            Software Engineer | AI Engineer | MSc in Artificial Intelligence
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Ahmad Samim Hamza, a Software Engineer based in Jyväskylä,
-            Finland. With over 4 years of experience building enterprise
-            applications, ERP systems, and e-commerce platforms. I enjoy
-            designing robust backend architectures, working with relational
-            databases, and delivering clean, maintainable code.
+            Software engineer and Master's student in Artificial Intelligence at the University of Jyväskylä, with 4+ years
+            of experience building production systems across full-stack, backend, and ERP domains. Currently applying AI
+            skills in an industry setting — developing RAG pipelines and LLM-based chatbots at Konecranes using
+            LangChain and LangGraph. I bring a rare combination of solid engineering foundations and growing applied
+            ML expertise, with hands-on experience in PyTorch, TensorFlow, and scalable API development.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            <strong>Top Skills: </strong> Laravel, Spring Boot, PostgreSQL,
-            React.js, Next.js, Livewire
+            <strong>Top Skills: </strong> Python, JavaScript, PostgreSQL,
+            React.js, Next.js, FastAPI, TensorFlow
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

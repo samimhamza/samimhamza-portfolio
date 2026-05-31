@@ -30,17 +30,19 @@ export const metadata = {
 
 export default function Skills() {
   const skills = {
+     ai_ml: [
+    'LangChain / LangGraph',
+    'RAG (Retrieval-Augmented Generation)',
+    'PyTorch',
+    'TensorFlow / Keras',
+    'scikit-learn',
+    'NumPy & Pandas',
+  ],
+    backend: ['Python', 'FastAPI', 'Django', 'Laravel', 'PHP', 'NestJS', 'Express.js', 'Spring Boot'],
     frontend: ['React', 'Next.js', 'Livewire', 'Vue', 'Nuxt.js', 'TailwindCSS'],
-    backend: ['Laravel', 'NestJS', 'Express.js', 'Django', 'Spring Boot'],
     database: ['MySQL', 'PostgreSQL', 'SQLite'],
     cloud: [
-      'EC2',
-      'S3',
-      'RDS',
-      'Lambda',
-      'DynamoDB',
-      'API Gateway',
-      'CloudWatch',
+      'Azure (AI Foundry, AI Search)', 'AWS (EC2, S3, RDS, Lambda)',
     ],
     tools: ['Git', 'GitHub', 'Docker', 'Kubernetes', 'Firebase', 'Linux'],
   }
@@ -51,17 +53,16 @@ export default function Skills() {
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div>
             <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
-              Frontend Development Skills
+              AI & Machine Learning
             </h2>
             <ul className="list-inside list-disc">
-              {skills.frontend.map((skill) => (
+              {skills.ai_ml.map(skill => (
                 <li key={skill} className="text-zinc-600 dark:text-zinc-400">
                   {skill}
-                </li>
-              ))}
+                  </li>
+                ))}
             </ul>
           </div>
-
           <div>
             <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
               Backend Development Skills
@@ -74,10 +75,21 @@ export default function Skills() {
               ))}
             </ul>
           </div>
-
           <div>
             <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
-              Cloud / AWS
+              Frontend Development Skills
+            </h2>
+            <ul className="list-inside list-disc">
+              {skills.frontend.map((skill) => (
+                <li key={skill} className="text-zinc-600 dark:text-zinc-400">
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
+              Cloud
             </h2>
             <ul className="list-inside list-disc">
               {skills.cloud.map((skill) => (
