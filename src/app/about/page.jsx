@@ -138,10 +138,10 @@ export default function About() {
             </h2>
             <ul className="mb-4 list-inside list-disc text-base text-zinc-600 dark:text-zinc-400">
               <li>
-                <strong>Laravel</strong>
+                <strong>Python</strong>
               </li>
               <li>
-                <strong>Spring Boot</strong>
+                <strong>JavaScript</strong>
               </li>
               <li>
                 <strong>PostgreSQL</strong>
@@ -153,7 +153,10 @@ export default function About() {
                 <strong>Next.js</strong>
               </li>
               <li>
-                <strong>Livewire</strong>
+                <strong>FastAPI</strong>
+              </li>
+              <li>
+                <strong>TensorFlow</strong>
               </li>
             </ul>
           </div>
