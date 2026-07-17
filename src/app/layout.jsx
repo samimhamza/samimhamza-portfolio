@@ -6,9 +6,10 @@ import '@/styles/tailwind.css'
 export const metadata = {
   title: {
     template: '%s - Ahmad Samim Hamza',
-    default: 'Ahmad Samim Hamza, Software Engineer.',
+    default: 'Ahmad Samim Hamza, AI/ML Engineer.',
   },
-  description: 'I’m Samim Hamza. A Futuristic Software Engineer',
+  description:
+    'AI/ML Engineer building production RAG systems, agentic applications, and LLM-powered products.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

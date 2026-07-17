@@ -17,6 +17,7 @@ import logoSmartFriqi from '@/images/logos/smart_friqi.svg'
 import logoRamaki from '@/images/logos/ramaki_logo.png'
 import logoKonecranes from '@/images/logos/konecranes_logo.jpg'
 import logoTwistedBits from '@/images/logos/twisted_bits.png'
+import logoCosmos from '@/images/logos/cosmos.svg'
 import { projects } from './projects/page'
 
 function MailIcon(props) {
@@ -81,7 +82,7 @@ export function ArrowDownIcon(props) {
 function Project({ project }) {
   return (
     <Card as="project">
-      <Card.Title href={project.link.href} target="_blank">
+      <Card.Title href={project.link?.href} target="_blank">
         {project.name}
       </Card.Title>
       {/* <Card.Eyebrow as="time" dateTime={project.date} decorate>
@@ -180,7 +181,7 @@ function Resume() {
   let resume = [
     {
       company: 'Konecranes',
-      title: 'Summer Trainee, Software Development Specialist',
+      title: 'Summer Trainee, Software Development Specialist (AI/ML)',
       logo: logoKonecranes, // add import at top
       start: 'May 2026',
       end: { label: 'Present', dateTime: new Date().getFullYear().toString() },
@@ -202,6 +203,13 @@ function Resume() {
       logo: logoPGL,
       start: 'Sep 2022',
       end: 'April 2024',
+    },
+    {
+      company: 'Kabul University',
+      title: 'Instructor (Python & Machine Learning)',
+      logo: logoCosmos,
+      start: 'April 2022',
+      end: 'Oct 2022',
     },
     {
       company: 'Smart Friqi',
@@ -278,18 +286,19 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Software Engineer | AI Engineer | MSc in Artificial Intelligence
+            AI/ML Engineer | Production AI Systems | Software Engineer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Software engineer and Master&apos;s student in Artificial Intelligence at the University of Jyväskylä, with 4+ years
-            of experience building production systems across full-stack, backend, and ERP domains. Currently applying AI
-            skills in an industry setting — developing RAG pipelines and LLM-based chatbots at Konecranes using
-            LangChain and LangGraph. I bring a rare combination of solid engineering foundations and growing applied
-            ML expertise, with hands-on experience in PyTorch, TensorFlow, and scalable API development.
+            AI/ML Engineer and Software Engineer with 5+ years
+            of experience building production systems across AI, backend, and full-stack domains. Currently designing and
+            deploying enterprise RAG and agentic applications at Konecranes using AWS Bedrock, Bedrock AgentCore,
+            LangChain, and LangGraph — integrating LLMs with real business data and workflows. I combine solid software
+            engineering foundations with deep applied AI expertise across conversational UIs, multi-agent orchestration,
+            and vector retrieval systems.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            <strong>Top Skills: </strong> Python, JavaScript, PostgreSQL,
-            React.js, Next.js, FastAPI, TensorFlow
+            <strong>Top Skills: </strong> Python, LangChain/LangGraph, AWS Bedrock,
+            RAG, PyTorch, FastAPI, PostgreSQL
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -330,7 +339,7 @@ export default async function Home() {
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-3xl dark:text-zinc-100">
-              Projects
+              Featured Projects
             </h2>
             {projects.map((project) => (
               <Project key={project.name} project={project} />

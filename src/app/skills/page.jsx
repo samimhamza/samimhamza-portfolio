@@ -25,35 +25,51 @@ function Tool({ title, href, children }) {
 
 export const metadata = {
   title: 'Skills',
-  description: 'My Skills',
+  description: 'AI/ML, backend, and full-stack skills for building production AI systems.',
 }
 
 export default function Skills() {
   const skills = {
-     ai_ml: [
-    'LangChain / LangGraph',
-    'RAG (Retrieval-Augmented Generation)',
-    'PyTorch',
-    'TensorFlow / Keras',
-    'scikit-learn',
-    'NumPy & Pandas',
-  ],
-    backend: ['Python', 'FastAPI', 'Django', 'Laravel', 'PHP', 'NestJS', 'Express.js', 'Spring Boot'],
-    frontend: ['React', 'Next.js', 'Livewire', 'Vue', 'Nuxt.js', 'TailwindCSS'],
-    database: ['MySQL', 'PostgreSQL', 'SQLite'],
-    cloud: [
-      'Azure (AI Foundry, AI Search)', 'AWS (EC2, S3, RDS, Lambda)',
+    ai_ml: [
+      'RAG Architectures & Vector Search',
+      'LangChain / LangGraph',
+      'AWS Bedrock (Agents, AgentCore, Knowledge Bases, MCP/tools)',
+      'ChromaDB',
+      'Prompt Engineering',
+      'Multi-Agent Orchestration',
+      'Conversational UI Design',
+      'PyTorch',
+      'TensorFlow / Keras',
+      'scikit-learn',
+      'NumPy, Pandas & Matplotlib',
+      'Feature Engineering & Hyperparameter Tuning',
     ],
-    tools: ['Git', 'GitHub', 'Docker', 'Kubernetes', 'Firebase', 'Linux'],
+    ai_coding: ['Claude Code', 'Cursor'],
+    backend: [
+      'Python (FastAPI, Django)',
+      'Node.js / TypeScript (NestJS, Express)',
+      'PHP (Laravel)',
+      'REST APIs, Auth & RBAC',
+    ],
+    frontend: ['React', 'Next.js', 'Vue.js', 'Nuxt.js', 'Livewire', 'Alpine.js', 'TailwindCSS'],
+    database: ['PostgreSQL', 'MySQL', 'SQLite'],
+    cloud: [
+      'AWS (Bedrock, Amplify, ECS, ECR, RDS, S3, Lambda, API Gateway)',
+      'Azure (AI Foundry, AI Search)',
+    ],
+    tools: ['Git', 'GitHub', 'Docker', 'Kubernetes', 'Linux', 'CI/CD', 'Logging & Monitoring'],
   }
 
   return (
-    <SimpleLayout title="My Skills" intro="">
+    <SimpleLayout
+      title="My Skills"
+      intro="Focused on building production AI systems — from RAG pipelines and agentic workflows to the full-stack applications that deliver them."
+    >
       <div className="space-y-20">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div>
             <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
-              AI & Machine Learning
+              AI &amp; Machine Learning
             </h2>
             <ul className="list-inside list-disc">
               {skills.ai_ml.map(skill => (
@@ -61,6 +77,18 @@ export default function Skills() {
                   {skill}
                   </li>
                 ))}
+            </ul>
+          </div>
+          <div>
+            <h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-white">
+              AI-Assisted Coding
+            </h2>
+            <ul className="list-inside list-disc">
+              {skills.ai_coding.map((skill) => (
+                <li key={skill} className="text-zinc-600 dark:text-zinc-400">
+                  {skill}
+                </li>
+              ))}
             </ul>
           </div>
           <div>

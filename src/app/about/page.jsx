@@ -43,7 +43,7 @@ function MailIcon(props) {
 export const metadata = {
   title: 'About',
   description:
-    'I’m Ahmad Samim Hamza, a Software and AI Engineer.',
+    'I’m Ahmad Samim Hamza, an AI/ML Engineer and Software Engineer building production AI systems.',
 }
 
 export default function About() {
@@ -62,30 +62,40 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Samim Hamza. An AI Engineer and Software Developer.
+            Samim Hamza. An AI/ML Engineer and Software Engineer building production AI systems.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-            <p>Software engineer and Master&apos;s student in Artificial Intelligence at the
-            University of Jyväskylä, with 4+ years of experience building production
-            systems across full-stack, backend, and ERP domains.</p>
+            <p>
+              AI/ML Engineer, Software Engineer, and Master&apos;s student in Artificial Intelligence at the
+              University of Jyväskylä, with 5+ years of experience building production
+              systems across AI, backend, and full-stack domains.
+            </p>
 
-            <p>Currently applying AI skills in an industry setting — developing RAG
-            pipelines and LLM-based chatbots at Konecranes using LangChain and LangGraph.
-            I bring a rare combination of solid engineering foundations and growing applied
-            ML expertise, with hands-on experience in PyTorch, TensorFlow, and scalable
-            API development.</p>
+            <p>
+              Currently designing and deploying enterprise RAG and agentic applications at
+              Konecranes using AWS Bedrock, Bedrock AgentCore, LangChain, and LangGraph —
+              integrating LLMs with real business data and workflows. I combine solid
+              software engineering foundations with deep applied AI expertise across
+              conversational UIs, multi-agent orchestration, and vector retrieval systems.
+              I work natively with AI-assisted coding tools and actively follow the
+              fast-moving agentic AI landscape.
+            </p>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
               Work Experience
             </h2>
             <ul className="mb-4 list-inside list-disc space-y-4 text-base text-zinc-600 dark:text-zinc-400">
               <li>
-                <strong>Summer Trainee, Software Development Specialist</strong> at Konecranes
-                (05/2026 – Present): Developing a production-grade AI Chatbot for Konecranes&apos;
-                internal systems using LangGraph, LangChain, and Retrieval-Augmented Generation
-                (RAG) architecture. Implementing document parsing and ingestion pipelines using
-                Docling to process enterprise knowledge sources into a PostgreSQL-backed store,
-                and building RESTful APIs in Python to expose chatbot functionality and integrate
-                with existing internal systems.
+                <strong>Summer Trainee, Software Development Specialist (AI/ML)</strong> at
+                Konecranes (05/2026 – Present): Built multiple production-ready RAG applications
+                on AWS Bedrock using Agents and AgentCore over internal XML, PDF, and XLSX
+                enterprise documents indexed in an S3-based vector store. Implemented RAG variants
+                with AWS Bedrock, Bedrock AgentCore, LangChain, and LangGraph, integrated into a
+                unified Next.js + FastAPI application exposing different RAG backends behind a
+                shared conversational UI. Architected a multi-agent system on AWS Bedrock with a
+                supervisor agent orchestrating collaborator agents for modular, task-specific
+                agentic workflows. Used PostgreSQL for user accounts, session data, and feedback
+                storage to enable evaluation across RAG variants. Deployed using AWS Amplify, ECS,
+                and RDS.
               </li>
               <li>
                 <strong>Senior Software Engineer</strong> at Ramaki Group of
@@ -103,6 +113,12 @@ export default function About() {
                 components in React + Tailwind; and collaborated with
                 cross-functional teams to deliver ERP features for 200+ daily
                 users.
+              </li>
+              <li>
+                <strong>Instructor (Python &amp; Machine Learning)</strong> at Kabul University
+                (04/2022 – 10/2022): Taught Python programming and Machine Learning fundamentals
+                to freshman and sophomore students, covering data analysis, model training and
+                evaluation, and practical ML tooling.
               </li>
               <li>
                 <strong>Full Stack Developer</strong> at Smart Friqi (26/07/2021
@@ -134,29 +150,43 @@ export default function About() {
               </li>
             </ul>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
+              Languages
+            </h2>
+            <ul className="mb-4 list-inside list-disc text-base text-zinc-600 dark:text-zinc-400">
+              <li>
+                <strong>English</strong>
+              </li>
+              <li>
+                <strong>Persian</strong>
+              </li>
+              <li>
+                <strong>Finnish</strong>
+              </li>
+            </ul>
+            <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
               Top Skills
             </h2>
             <ul className="mb-4 list-inside list-disc text-base text-zinc-600 dark:text-zinc-400">
               <li>
-                <strong>Python</strong>
+                <strong>LangChain / LangGraph</strong>
               </li>
               <li>
-                <strong>JavaScript</strong>
+                <strong>AWS Bedrock (Agents, AgentCore, Knowledge Bases)</strong>
+              </li>
+              <li>
+                <strong>RAG &amp; Vector Search</strong>
+              </li>
+              <li>
+                <strong>Python &amp; FastAPI</strong>
+              </li>
+              <li>
+                <strong>PyTorch &amp; TensorFlow</strong>
               </li>
               <li>
                 <strong>PostgreSQL</strong>
               </li>
               <li>
-                <strong>React.js</strong>
-              </li>
-              <li>
-                <strong>Next.js</strong>
-              </li>
-              <li>
-                <strong>FastAPI</strong>
-              </li>
-              <li>
-                <strong>TensorFlow</strong>
+                <strong>Next.js &amp; React</strong>
               </li>
             </ul>
           </div>
