@@ -9,14 +9,25 @@ import logoTeebAlhoor from '@/images/logos/teebalhoor.svg'
 import logoTglSupplies from '@/images/logos/tglsupplies.png'
 import logoPGT from '@/images/logos/pgt.png'
 import logoKonecranes from '@/images/logos/konecranes_logo.jpg'
+import logoRamaki from '@/images/logos/ramaki_logo.png'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 export const projects = [
   {
     name: 'Enterprise RAG Assistant (Konecranes)',
     description:
-      'Internal enterprise knowledge assistant over heterogeneous documents (XML, PDF, XLSX), with multiple RAG variants (Bedrock-native, LangChain, LangGraph), a shared conversational UI, multi-agent orchestration, and a feedback-based evaluation pipeline. Built with AWS Bedrock, FastAPI, Next.js, PostgreSQL, and AWS Amplify/ECS/ECR/RDS.',
+      'Internal enterprise knowledge assistant over 100+ heterogeneous documents (XML, PDF, XLSX), with multiple RAG variants (Bedrock-native, LangChain, LangGraph), a shared conversational UI, multi-agent orchestration, and a feedback-based evaluation pipeline. Built end to end with FastAPI, Next.js, and PostgreSQL on AWS Amplify/ECS/RDS — developed primarily with Claude Code, then fully documented and handed over to the internal team.',
     logo: logoKonecranes,
+  },
+  {
+    name: 'Dara.af E-Commerce Platform',
+    description:
+      'E-commerce platform supporting hundreds of product listings and daily customer orders. Led a team of eight engineers through PostgreSQL schema design, REST API development, and full-stack delivery using Laravel, React, and Next.js.',
+    link: {
+      href: 'https://dara.af/',
+      label: 'dara.af',
+    },
+    logo: logoRamaki,
   },
   {
     name: 'Health Information RAG Chatbot',
@@ -103,7 +114,7 @@ export default function Projects() {
   return (
     <SimpleLayout
       title="Projects that I have built and contributed to."
-      intro="From enterprise RAG assistants and agentic AI systems to full-stack ERP platforms — these are the projects I am most proud of."
+      intro="From enterprise RAG assistants and agentic AI systems to e-commerce and ERP platforms — these are the projects I am most proud of."
     >
       <ul
         role="list"

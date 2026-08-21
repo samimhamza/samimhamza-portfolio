@@ -43,7 +43,7 @@ function MailIcon(props) {
 export const metadata = {
   title: 'About',
   description:
-    'I’m Ahmad Samim Hamza, an AI/ML Engineer and Software Engineer building production AI systems.',
+    'I’m Ahmad Samim Hamza, a Full Stack AI Developer and Software Engineer building production AI systems and full-stack platforms.',
 }
 
 export default function About() {
@@ -62,23 +62,40 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Samim Hamza. An AI/ML Engineer and Software Engineer building production AI systems.
+            Samim Hamza. A Full Stack AI Developer and Software Engineer shipping production systems.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              AI/ML Engineer, Software Engineer, and Master&apos;s student in Artificial Intelligence at the
-              University of Jyväskylä, with 5+ years of experience building production
-              systems across AI, backend, and full-stack domains.
+              Full Stack AI Developer, Software Engineer, and Master&apos;s student in Artificial
+              Intelligence at the University of Jyväskylä, with 5+ years of experience building
+              production systems across backend, full-stack, and AI domains.
             </p>
 
             <p>
-              Currently designing and deploying enterprise RAG and agentic applications at
-              Konecranes using AWS Bedrock, Bedrock AgentCore, LangChain, and LangGraph —
-              integrating LLMs with real business data and workflows. I combine solid
-              software engineering foundations with deep applied AI expertise across
-              conversational UIs, multi-agent orchestration, and vector retrieval systems.
-              I work natively with AI-assisted coding tools and actively follow the
-              fast-moving agentic AI landscape.
+              At Konecranes, I designed and deployed enterprise RAG and agentic applications using
+              AWS Bedrock, Bedrock AgentCore, LangChain, and LangGraph — turning messy internal
+              documents into reliable answers through pipelines indexed from 100+ XML, PDF, and XLSX
+              sources. I built the full stack (Next.js + FastAPI), evaluated three RAG variants,
+              stored feedback in PostgreSQL for iteration, deployed on AWS Amplify/ECS/RDS, and
+              documented the system for handover to the internal team. I work daily with AI-assisted
+              coding tools such as Claude Code and GitHub Copilot.
+            </p>
+
+            <p>
+              Before this AI-focused chapter, I built ERP, logistics, and e-commerce platforms with
+              Python, Node.js, TypeScript, React, Next.js, NestJS, and Laravel — including leading
+              a team of eight engineers on{' '}
+              <a
+                href="https://dara.af/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-teal-600 underline decoration-teal-600/30 underline-offset-2 hover:decoration-teal-600 dark:text-teal-400 dark:decoration-teal-400/30 dark:hover:decoration-teal-400"
+              >
+                Dara.af
+              </a>
+              , an e-commerce platform with hundreds of product listings and daily customer orders.
+              I&apos;m equally comfortable on the frontend, designing backends and data layers, and
+              deploying with Docker, AWS ECS, and Kubernetes.
             </p>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
               Work Experience
@@ -87,23 +104,31 @@ export default function About() {
               <li>
                 <strong>Summer Trainee, Software Development Specialist (AI/ML)</strong> at
                 Konecranes (05/2026 – Present): Built multiple production-ready RAG applications
-                on AWS Bedrock using Agents and AgentCore over internal XML, PDF, and XLSX
-                enterprise documents indexed in an S3-based vector store. Implemented RAG variants
-                with AWS Bedrock, Bedrock AgentCore, LangChain, and LangGraph, integrated into a
-                unified Next.js + FastAPI application exposing different RAG backends behind a
-                shared conversational UI. Architected a multi-agent system on AWS Bedrock with a
-                supervisor agent orchestrating collaborator agents for modular, task-specific
-                agentic workflows. Used PostgreSQL for user accounts, session data, and feedback
-                storage to enable evaluation across RAG variants. Deployed using AWS Amplify, ECS,
-                and RDS.
+                on AWS Bedrock using Agents and AgentCore, processing 100+ internal XML, PDF, and
+                XLSX documents indexed in an S3-based vector store. Implemented RAG variants with
+                AWS Bedrock, Bedrock AgentCore, LangChain, and LangGraph in a unified Next.js +
+                FastAPI application with a shared conversational UI — developed primarily with
+                Claude Code. Architected a multi-agent system with a supervisor agent orchestrating
+                collaborator agents. Used PostgreSQL for user accounts, session data, and feedback
+                storage to evaluate three RAG variants. Deployed on AWS Amplify, ECS, and RDS;
+                collaborated with stakeholders, documented the solution, and handed it over to the
+                internal team.
               </li>
               <li>
                 <strong>Senior Software Engineer</strong> at Ramaki Group of
-                Companies (05/2024 – 07/2025): Guided and coordinated a team of
-                8 engineers during the development of an e-commerce platform.
-                Responsible for database analysis and design, developing REST
-                and GraphQL APIs, implementing backend logic, and writing unit,
-                integration, and feature tests.
+                Companies (05/2024 – 07/2025): Led and coordinated a team of eight engineers on{' '}
+                <a
+                  href="https://dara.af/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-teal-600 underline decoration-teal-600/30 underline-offset-2 hover:decoration-teal-600 dark:text-teal-400 dark:decoration-teal-400/30 dark:hover:decoration-teal-400"
+                >
+                  Dara.af
+                </a>
+                , an e-commerce platform supporting hundreds of product listings and daily customer
+                orders. Designed and optimized PostgreSQL schemas, built RESTful APIs, wrote unit,
+                integration, and feature tests, and conducted code reviews while mentoring junior
+                developers — using Laravel, React, and Next.js.
               </li>
               <li>
                 <strong>Software Engineer</strong> at Peace Global Logistics
@@ -168,25 +193,25 @@ export default function About() {
             </h2>
             <ul className="mb-4 list-inside list-disc text-base text-zinc-600 dark:text-zinc-400">
               <li>
-                <strong>LangChain / LangGraph</strong>
+                <strong>LangChain / LangGraph &amp; RAG</strong>
               </li>
               <li>
-                <strong>AWS Bedrock (Agents, AgentCore, Knowledge Bases)</strong>
+                <strong>AWS Bedrock (Agents, AgentCore)</strong>
               </li>
               <li>
-                <strong>RAG &amp; Vector Search</strong>
+                <strong>Python, FastAPI &amp; TypeScript/NestJS</strong>
               </li>
               <li>
-                <strong>Python &amp; FastAPI</strong>
+                <strong>Next.js, React &amp; Laravel</strong>
               </li>
               <li>
-                <strong>PyTorch &amp; TensorFlow</strong>
+                <strong>PostgreSQL &amp; Docker/Kubernetes</strong>
               </li>
               <li>
-                <strong>PostgreSQL</strong>
+                <strong>PyTorch &amp; scikit-learn</strong>
               </li>
               <li>
-                <strong>Next.js &amp; React</strong>
+                <strong>Claude Code &amp; GitHub Copilot</strong>
               </li>
             </ul>
           </div>

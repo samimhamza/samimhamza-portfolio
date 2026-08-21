@@ -25,7 +25,8 @@ function Tool({ title, href, children }) {
 
 export const metadata = {
   title: 'Skills',
-  description: 'AI/ML, backend, and full-stack skills for building production AI systems.',
+  description:
+    'AI/ML, full-stack, and software engineering skills for building production AI systems and enterprise applications.',
 }
 
 export default function Skills() {
@@ -44,7 +45,7 @@ export default function Skills() {
       'NumPy, Pandas & Matplotlib',
       'Feature Engineering & Hyperparameter Tuning',
     ],
-    ai_coding: ['Claude Code', 'Cursor'],
+    ai_coding: ['Claude Code', 'GitHub Copilot', 'Cursor'],
     backend: [
       'Python (FastAPI, Django)',
       'Node.js / TypeScript (NestJS, Express)',
@@ -55,7 +56,7 @@ export default function Skills() {
     database: ['PostgreSQL', 'MySQL', 'SQLite'],
     cloud: [
       'AWS (Bedrock, Amplify, ECS, ECR, RDS, S3, Lambda, API Gateway)',
-      'Azure (AI Foundry, AI Search)',
+      'Azure (Foundational / AI Services)',
     ],
     tools: ['Git', 'GitHub', 'Docker', 'Kubernetes', 'Linux', 'CI/CD', 'Logging & Monitoring'],
   }
@@ -63,7 +64,7 @@ export default function Skills() {
   return (
     <SimpleLayout
       title="My Skills"
-      intro="Focused on building production AI systems — from RAG pipelines and agentic workflows to the full-stack applications that deliver them."
+      intro="From enterprise RAG pipelines and multi-agent orchestration to full-stack ERP and e-commerce platforms — the skills behind production AI systems and the software that ships them."
     >
       <div className="space-y-20">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">

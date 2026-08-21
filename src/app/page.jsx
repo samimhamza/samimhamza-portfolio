@@ -286,19 +286,35 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            AI/ML Engineer | Production AI Systems | Software Engineer
+            Full Stack AI Developer | Software Engineer | Production AI Systems
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            AI/ML Engineer and Software Engineer with 5+ years
-            of experience building production systems across AI, backend, and full-stack domains. Currently designing and
-            deploying enterprise RAG and agentic applications at Konecranes using AWS Bedrock, Bedrock AgentCore,
-            LangChain, and LangGraph — integrating LLMs with real business data and workflows. I combine solid software
-            engineering foundations with deep applied AI expertise across conversational UIs, multi-agent orchestration,
-            and vector retrieval systems.
+            Full Stack AI Developer and Master&apos;s student in Artificial Intelligence at the
+            University of Jyväskylä, with 5+ years of experience building production systems across
+            backend, full-stack, and AI domains. At Konecranes, I built an enterprise RAG chatbot end
+            to end — LangGraph conversational logic, RAG pipelines over 100+ internal documents,
+            FastAPI backend, and the Next.js interface — then documented it and handed it over to
+            the internal team.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            <strong>Top Skills: </strong> Python, LangChain/LangGraph, AWS Bedrock,
-            RAG, PyTorch, FastAPI, PostgreSQL
+            Before this AI-focused chapter, I spent several years as a full-stack developer building
+            ERP, logistics, and e-commerce platforms with React, Next.js, NestJS, and Laravel — including
+            leading a team of eight engineers on{' '}
+            <a
+              href="https://dara.af/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-teal-600 underline decoration-teal-600/30 underline-offset-2 hover:decoration-teal-600 dark:text-teal-400 dark:decoration-teal-400/30 dark:hover:decoration-teal-400"
+            >
+              Dara.af
+            </a>
+            . I combine solid software engineering foundations (Python, FastAPI, PostgreSQL, Docker,
+            AWS, CI/CD) with applied AI expertise across RAG, multi-agent orchestration, and
+            conversational UIs.
+          </p>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            <strong>Top Skills: </strong> Python, TypeScript, LangChain/LangGraph, AWS Bedrock, RAG,
+            FastAPI, Next.js, PostgreSQL, Docker/Kubernetes
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
