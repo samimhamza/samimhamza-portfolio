@@ -62,29 +62,34 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Samim Hamza. A Full Stack AI Developer and Software Engineer shipping production systems.
+            Samim Hamza. An AI Engineer and Full Stack AI Developer shipping
+            production systems.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              Full Stack AI Developer, Software Engineer, and Master&apos;s student in Artificial
-              Intelligence at the University of Jyväskylä, with 5+ years of experience building
-              production systems across backend, full-stack, and AI domains.
+              AI Engineer, Full Stack AI Developer, and Master&apos;s student in
+              Artificial Intelligence at the University of Jyväskylä, with 5+
+              years of experience building production systems across backend,
+              full-stack, and AI domains.
             </p>
 
             <p>
-              At Konecranes, I designed and deployed enterprise RAG and agentic applications using
-              AWS Bedrock, Bedrock AgentCore, LangChain, and LangGraph — turning messy internal
-              documents into reliable answers through pipelines indexed from 100+ XML, PDF, and XLSX
-              sources. I built the full stack (Next.js + FastAPI), evaluated three RAG variants,
-              stored feedback in PostgreSQL for iteration, deployed on AWS Amplify/ECS/RDS, and
-              documented the system for handover to the internal team. I work daily with AI-assisted
-              coding tools such as Claude Code and GitHub Copilot.
+              At Konecranes, I designed and deployed enterprise RAG and agentic
+              applications using AWS Bedrock, Bedrock AgentCore, LangChain, and
+              LangGraph — turning messy internal documents into reliable answers
+              through pipelines indexed from 100+ XML, PDF, and XLSX sources. I
+              built the full stack (Next.js + FastAPI), evaluated three RAG
+              variants, stored feedback in PostgreSQL for iteration, deployed on
+              AWS Amplify/ECS/RDS, and documented the system for handover to the
+              internal team. I work daily with AI-assisted coding tools such as
+              Claude Code and GitHub Copilot.
             </p>
 
             <p>
-              Before this AI-focused chapter, I built ERP, logistics, and e-commerce platforms with
-              Python, Node.js, TypeScript, React, Next.js, NestJS, and Laravel — including leading
-              a team of eight engineers on{' '}
+              Before this AI-focused chapter, I built ERP, logistics, and
+              e-commerce platforms with Python, Node.js, TypeScript, React,
+              Next.js, NestJS, and Laravel — including leading a team of eight
+              engineers on{' '}
               <a
                 href="https://dara.af/"
                 target="_blank"
@@ -93,30 +98,37 @@ export default function About() {
               >
                 Dara.af
               </a>
-              , an e-commerce platform with hundreds of product listings and daily customer orders.
-              I&apos;m equally comfortable on the frontend, designing backends and data layers, and
-              deploying with Docker, AWS ECS, and Kubernetes.
+              , an e-commerce platform with hundreds of product listings and
+              daily customer orders. I&apos;m equally comfortable on the
+              frontend, designing backends and data layers, and deploying with
+              Docker, AWS ECS, and Kubernetes.
             </p>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
               Work Experience
             </h2>
             <ul className="mb-4 list-inside list-disc space-y-4 text-base text-zinc-600 dark:text-zinc-400">
               <li>
-                <strong>Summer Trainee, Software Development Specialist (AI/ML)</strong> at
-                Konecranes (05/2026 – Present): Built multiple production-ready RAG applications
-                on AWS Bedrock using Agents and AgentCore, processing 100+ internal XML, PDF, and
-                XLSX documents indexed in an S3-based vector store. Implemented RAG variants with
-                AWS Bedrock, Bedrock AgentCore, LangChain, and LangGraph in a unified Next.js +
-                FastAPI application with a shared conversational UI — developed primarily with
-                Claude Code. Architected a multi-agent system with a supervisor agent orchestrating
-                collaborator agents. Used PostgreSQL for user accounts, session data, and feedback
-                storage to evaluate three RAG variants. Deployed on AWS Amplify, ECS, and RDS;
-                collaborated with stakeholders, documented the solution, and handed it over to the
-                internal team.
+                <strong>
+                  Summer Trainee, Software Development Specialist (AI/ML)
+                </strong>{' '}
+                at Konecranes (05/2026 – Present): Built multiple
+                production-ready RAG applications on AWS Bedrock using Agents
+                and AgentCore, processing 100+ internal XML, PDF, and XLSX
+                documents indexed in an S3-based vector store. Implemented RAG
+                variants with AWS Bedrock, Bedrock AgentCore, LangChain, and
+                LangGraph in a unified Next.js + FastAPI application with a
+                shared conversational UI — developed primarily with Claude Code.
+                Architected a multi-agent system with a supervisor agent
+                orchestrating collaborator agents. Used PostgreSQL for user
+                accounts, session data, and feedback storage to evaluate three
+                RAG variants. Deployed on AWS Amplify, ECS, and RDS;
+                collaborated with stakeholders, documented the solution, and
+                handed it over to the internal team.
               </li>
               <li>
                 <strong>Senior Software Engineer</strong> at Ramaki Group of
-                Companies (05/2024 – 07/2025): Led and coordinated a team of eight engineers on{' '}
+                Companies (05/2024 – 07/2025): Led and coordinated a team of
+                eight engineers on{' '}
                 <a
                   href="https://dara.af/"
                   target="_blank"
@@ -125,9 +137,10 @@ export default function About() {
                 >
                   Dara.af
                 </a>
-                , an e-commerce platform supporting hundreds of product listings and daily customer
-                orders. Designed and optimized PostgreSQL schemas, built RESTful APIs, wrote unit,
-                integration, and feature tests, and conducted code reviews while mentoring junior
+                , an e-commerce platform supporting hundreds of product listings
+                and daily customer orders. Designed and optimized PostgreSQL
+                schemas, built RESTful APIs, wrote unit, integration, and
+                feature tests, and conducted code reviews while mentoring junior
                 developers — using Laravel, React, and Next.js.
               </li>
               <li>
@@ -140,10 +153,11 @@ export default function About() {
                 users.
               </li>
               <li>
-                <strong>Instructor (Python &amp; Machine Learning)</strong> at Kabul University
-                (04/2022 – 10/2022): Taught Python programming and Machine Learning fundamentals
-                to freshman and sophomore students, covering data analysis, model training and
-                evaluation, and practical ML tooling.
+                <strong>Instructor (Python &amp; Machine Learning)</strong> at
+                Kabul University (04/2022 – 10/2022): Taught Python programming
+                and Machine Learning fundamentals to freshman and sophomore
+                students, covering data analysis, model training and evaluation,
+                and practical ML tooling.
               </li>
               <li>
                 <strong>Full Stack Developer</strong> at Smart Friqi (26/07/2021

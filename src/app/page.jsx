@@ -286,19 +286,21 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Full Stack AI Developer | Software Engineer | Production AI Systems
+            AI Engineer | Full Stack AI Developer | Software Engineer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Full Stack AI Developer and Master&apos;s student in Artificial Intelligence at the
-            University of Jyväskylä, with 5+ years of experience building production systems across
-            backend, full-stack, and AI domains. At Konecranes, I built an enterprise RAG chatbot end
-            to end — LangGraph conversational logic, RAG pipelines over 100+ internal documents,
-            FastAPI backend, and the Next.js interface — then documented it and handed it over to
-            the internal team.
+            AI Engineer and Master&apos;s student in Artificial Intelligence at
+            the University of Jyväskylä, with 5+ years of experience building
+            production systems across backend, full-stack, and AI domains. At
+            Konecranes, I built an enterprise RAG chatbot end to end — LangGraph
+            conversational logic, RAG pipelines over 100+ internal documents,
+            FastAPI backend, and the Next.js interface — then documented it and
+            handed it over to the internal team.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Before this AI-focused chapter, I spent several years as a full-stack developer building
-            ERP, logistics, and e-commerce platforms with React, Next.js, NestJS, and Laravel — including
+            Before this AI-focused chapter, I spent several years as a
+            full-stack developer building ERP, logistics, and e-commerce
+            platforms with React, Next.js, NestJS, and Laravel — including
             leading a team of eight engineers on{' '}
             <a
               href="https://dara.af/"
@@ -308,13 +310,14 @@ export default async function Home() {
             >
               Dara.af
             </a>
-            . I combine solid software engineering foundations (Python, FastAPI, PostgreSQL, Docker,
-            AWS, CI/CD) with applied AI expertise across RAG, multi-agent orchestration, and
-            conversational UIs.
+            . I combine solid software engineering foundations (Python, FastAPI,
+            PostgreSQL, Docker, AWS, CI/CD) with applied AI expertise across
+            RAG, multi-agent orchestration, and conversational UIs.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            <strong>Top Skills: </strong> Python, TypeScript, LangChain/LangGraph, AWS Bedrock, RAG,
-            FastAPI, Next.js, PostgreSQL, Docker/Kubernetes
+            <strong>Top Skills: </strong> Python, TypeScript,
+            LangChain/LangGraph, AWS Bedrock, RAG, FastAPI, Next.js, PostgreSQL,
+            Docker/Kubernetes
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
