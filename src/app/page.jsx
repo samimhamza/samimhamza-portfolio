@@ -85,11 +85,24 @@ function Project({ project }) {
       <Card.Title href={project.link?.href} target="_blank">
         {project.name}
       </Card.Title>
-      {/* <Card.Eyebrow as="time" dateTime={project.date} decorate>
-        {formatDate(project.date)}
-      </Card.Eyebrow> */}
+      {project.subtitle && (
+        <p className="relative z-10 -mt-1 text-xs font-medium text-teal-600 dark:text-teal-400">
+          {project.subtitle}
+        </p>
+      )}
       <Card.Description>{project.description}</Card.Description>
-      {/* <Card.Cta>Read project</Card.Cta> */}
+      {project.tags && project.tags.length > 0 && (
+        <div className="relative z-10 mt-3 flex flex-wrap gap-1.5">
+          {project.tags.map((tag) => (
+            <span
+              key={tag}
+              className="inline-flex items-center rounded-md bg-zinc-100 px-2 py-0.5 text-xs font-medium text-zinc-700 ring-1 ring-inset ring-zinc-500/10 dark:bg-zinc-800 dark:text-zinc-300 dark:ring-zinc-400/20"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
     </Card>
   )
 }
@@ -156,8 +169,13 @@ function Role({ role }) {
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Company</dt>
-        <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-          {role.company}
+        <dd className="flex w-full flex-none items-center justify-between text-sm font-medium text-zinc-900 dark:text-zinc-100">
+          <span>{role.company}</span>
+          {role.location && (
+            <span className="text-xs font-normal text-zinc-400 dark:text-zinc-500">
+              {role.location}
+            </span>
+          )}
         </dd>
         <dt className="sr-only">Role</dt>
         <dd className="text-xs text-zinc-500 dark:text-zinc-400">
@@ -183,9 +201,10 @@ function Resume() {
       company: 'Konecranes',
       title:
         'Software Development Specialist (AI/ML) – Fixed-Term Summer Contract',
-      logo: logoKonecranes, // add import at top
+      location: 'Hyvinkää, Finland',
+      logo: logoKonecranes,
       start: 'May 2026',
-      end: { label: 'Present', dateTime: new Date().getFullYear().toString() },
+      end: 'Aug 2026',
     },
     {
       company: 'Ramaki Group Of Companies',
@@ -193,10 +212,6 @@ function Resume() {
       logo: logoRamaki,
       start: 'May 2024',
       end: 'July 2025',
-      // end: {
-      //   label: 'Present',
-      //   dateTime: new Date().getFullYear().toString(),
-      // },
     },
     {
       company: 'Peace Global Logistics',
@@ -280,45 +295,21 @@ function Photos() {
 }
 
 export default async function Home() {
-  // let projects = (await getAllProjects()).slice(0, 4)
-
   return (
     <>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            AI Engineer | Full Stack AI Developer | Software Engineer
+            AI &amp; Senior Software Engineer | Forward Deployed AI/ML, Agentic Systems &amp; Full-Stack Architecture
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            AI Engineer and Master&apos;s student in Artificial Intelligence at
-            the University of Jyväskylä, with 5+ years of experience building
-            production systems across backend, full-stack, and AI domains. At
-            Konecranes, I built an enterprise RAG chatbot end to end — LangGraph
-            conversational logic, RAG pipelines over 100+ internal documents,
-            FastAPI backend, and the Next.js interface — then documented it and
-            handed it over to the internal team.
+            AI &amp; Senior Software Engineer with 5+ years of production experience turning complex, ambiguous business challenges into reliable software and intelligent systems. At Konecranes, I owned the end-to-end delivery of an enterprise RAG and multi-agent assistant—evaluating architectural trade-offs across AWS Bedrock, LangGraph, and LangChain, integrating feedback loops in PostgreSQL, and deploying to AWS before handover.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Before this AI-focused chapter, I spent several years as a
-            full-stack developer building ERP, logistics, and e-commerce
-            platforms with React, Next.js, NestJS, and Laravel — including
-            leading a team of eight engineers on{' '}
-            <a
-              href="https://dara.af/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-teal-600 underline decoration-teal-600/30 underline-offset-2 hover:decoration-teal-600 dark:text-teal-400 dark:decoration-teal-400/30 dark:hover:decoration-teal-400"
-            >
-              Dara.af
-            </a>
-            . I combine solid software engineering foundations (Python, FastAPI,
-            PostgreSQL, Docker, AWS, CI/CD) with applied AI expertise across
-            RAG, multi-agent orchestration, and conversational UIs.
+            Earlier in my career, I led engineering teams and delivered production ERP, logistics, and transactional platforms. I combine robust software engineering fundamentals (Python, FastAPI, TypeScript, PostgreSQL, Docker, AWS) with applied AI and agentic orchestration, developing daily with AI-assisted coding tools (Claude Code, Cursor) to ship production-grade code rapidly.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            <strong>Top Skills: </strong> Python, TypeScript,
-            LangChain/LangGraph, AWS Bedrock, RAG, FastAPI, Next.js, PostgreSQL,
-            Docker/Kubernetes
+            <strong>Top Skills: </strong> Python, FastAPI, LangGraph / LangChain, AWS Bedrock (Agents/AgentCore), Multi-Agent Systems, RAG Architectures, Claude Code / Cursor, Next.js, PostgreSQL, Docker/K8s
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

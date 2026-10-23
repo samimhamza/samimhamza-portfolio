@@ -14,10 +14,20 @@ import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 export const projects = [
   {
-    name: 'Enterprise RAG Assistant (Konecranes)',
+    name: 'Enterprise RAG & Multi-Agent Assistant (Konecranes)',
     description:
-      'Internal enterprise knowledge assistant over 100+ heterogeneous documents (XML, PDF, XLSX), with multiple RAG variants (Bedrock-native, LangChain, LangGraph), a shared conversational UI, multi-agent orchestration, and a feedback-based evaluation pipeline. Built end to end with FastAPI, Next.js, and PostgreSQL on AWS Amplify/ECS/RDS — developed primarily with Claude Code, then fully documented and handed over to the internal team.',
+      'Internal enterprise knowledge assistant over 100+ heterogeneous documents (XML, PDF, XLSX). Benchmarked and implemented multiple RAG variants (Bedrock-native, LangChain, LangGraph) behind a shared conversational UI, with a supervisor agent orchestrating collaborator agents. Includes a PostgreSQL-backed human evaluation pipeline, AWS Amplify/ECS/RDS deployment, and CloudWatch performance monitoring. Built end to end using Claude Code as the primary AI-assisted environment, then fully documented and transitioned to internal teams.',
     logo: logoKonecranes,
+    tags: [
+      'AWS Bedrock',
+      'LangGraph',
+      'Multi-Agent Systems',
+      'FastAPI',
+      'Next.js',
+      'PostgreSQL',
+      'Claude Code',
+      'CloudWatch',
+    ],
   },
   {
     name: 'Dara.af E-Commerce Platform',
@@ -28,12 +38,22 @@ export const projects = [
       label: 'dara.af',
     },
     logo: logoRamaki,
+    tags: ['Next.js', 'React', 'Laravel', 'PostgreSQL', 'E-Commerce'],
   },
   {
     name: 'Health Information RAG Chatbot',
+    subtitle: 'University of Jyväskylä',
     description:
-      'MSc mini project at the University of Jyväskylä — a production-grade domain-specific RAG chatbot built by scraping a public health information website, processing content into a ChromaDB vector store, and integrating an LLM for conversational health information retrieval. Full pipeline: web scraping → document parsing → vector ingestion → conversational retrieval interface.',
+      'MSc project at the University of Jyväskylä — a production-grade domain-specific RAG chatbot built by scraping a public health information website, chunking and embedding content into a ChromaDB vector store, and evaluating retrieval accuracy and generation quality with LLM evaluation frameworks. Complete pipeline covering web scraping, vector indexing, conversational retrieval, and evaluation.',
     logo: logoPlanetaria,
+    tags: [
+      'Python',
+      'ChromaDB',
+      'RAG',
+      'Vector Search',
+      'LLM Evaluation',
+      'Web Scraping',
+    ],
   },
   {
     name: 'United Used Cars Website and MIS',
@@ -44,6 +64,7 @@ export const projects = [
       label: 'unitedtradingcars.com',
     },
     logo: unitedLogo,
+    tags: ['Next.js', 'Laravel', 'Material UI', 'MySQL'],
   },
   {
     name: 'PGL ERP System',
@@ -51,6 +72,7 @@ export const projects = [
       'ERP system for Peace Global Logistics covering logistics, shipments, HR, and inventory modules. Built with NestJS, React, Next.js, and PostgreSQL.',
     link: { href: 'https://pglsystem.com/', label: 'pglsystem.com' },
     logo: logPGL,
+    tags: ['NestJS', 'React', 'Next.js', 'PostgreSQL', 'ERP'],
   },
   {
     name: 'TGL Supplies System',
@@ -61,6 +83,7 @@ export const projects = [
       label: 'tglsupplies.com',
     },
     logo: logoTglSupplies,
+    tags: ['Node.js', 'Express.js', 'React', 'PostgreSQL'],
   },
   {
     name: 'Charity Management System',
@@ -71,6 +94,7 @@ export const projects = [
       label: 'github.com',
     },
     logo: logoGPF,
+    tags: ['React', 'Mantine', 'REST API'],
   },
   {
     name: 'TeebAlhoor ERP System',
@@ -81,6 +105,7 @@ export const projects = [
       label: 'github.com',
     },
     logo: logoTeebAlhoor,
+    tags: ['Laravel', 'Nuxt.js', 'Vue.js', 'PostgreSQL'],
   },
   {
     name: 'Peace Global Tech Website',
@@ -91,6 +116,7 @@ export const projects = [
       label: 'peaceglobaltech.com',
     },
     logo: logoPGT,
+    tags: ['Next.js', 'React', 'Tailwind CSS'],
   },
 ]
 
@@ -107,7 +133,7 @@ function LinkIcon(props) {
 
 export const metadata = {
   title: 'Projects',
-  description: 'AI/ML and full-stack projects I have built and contributed to.',
+  description: 'AI/ML, agentic systems, and full-stack projects I have built and contributed to.',
 }
 
 export default function Projects() {
@@ -151,7 +177,24 @@ export default function Projects() {
                 project.name
               )}
             </h2>
+            {project.subtitle && (
+              <p className="relative z-10 mt-1 text-xs font-medium text-teal-600 dark:text-teal-400">
+                {project.subtitle}
+              </p>
+            )}
             <Card.Description>{project.description}</Card.Description>
+            {project.tags && project.tags.length > 0 && (
+              <div className="relative z-10 mt-4 flex flex-wrap gap-1.5">
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="inline-flex items-center rounded-md bg-zinc-100 px-2 py-0.5 text-xs font-medium text-zinc-700 ring-1 ring-inset ring-zinc-500/10 dark:bg-zinc-800 dark:text-zinc-300 dark:ring-zinc-400/20"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
             {project.link && (
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                 <LinkIcon className="h-6 w-6 flex-none" />
