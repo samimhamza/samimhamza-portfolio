@@ -62,19 +62,38 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Samim Hamza. AI &amp; Senior Software Engineer turning complex problems into production systems.
+            Samim Hamza. AI &amp; Senior Software Engineer turning complex
+            problems into production systems.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              AI &amp; Senior Software Engineer and Master&apos;s student in Artificial Intelligence at the University of Jyväskylä, with 5+ years of experience delivering production systems across AI, full-stack, and distributed architectures. I turn complex, ambiguous business problems into reliable software and intelligent systems.
+              AI &amp; Senior Software Engineer and Master&apos;s student in
+              Artificial Intelligence at the University of Jyväskylä, with 5+
+              years of experience delivering production systems across AI,
+              full-stack, and distributed architectures. I turn complex,
+              ambiguous business problems into reliable software and intelligent
+              systems.
             </p>
 
             <p>
-              At Konecranes, I designed, built, evaluated, and deployed enterprise RAG and agentic applications on AWS Bedrock (Agents, AgentCore), LangChain, and LangGraph. I took the system from exploration over 100+ heterogeneous enterprise documents (XML, PDF, XLSX) to a unified Next.js + FastAPI application. I implemented a PostgreSQL feedback loop to evaluate retrieval quality and latency across multiple RAG backends, deployed on AWS Amplify, ECS, and RDS, and monitored health with CloudWatch before internal handover. I build natively with Claude Code and Cursor to accelerate development while maintaining strict testing and code quality.
+              At Konecranes, I designed, built, evaluated, and deployed
+              enterprise RAG and agentic applications on AWS Bedrock (Agents,
+              AgentCore), LangChain, and LangGraph. I took the system from
+              exploration over 100+ heterogeneous enterprise documents (XML,
+              PDF, XLSX) to a unified Next.js + FastAPI application. I
+              implemented a PostgreSQL feedback loop to evaluate retrieval
+              quality and latency across multiple RAG backends, deployed on AWS
+              Amplify, ECS, and RDS, and monitored health with CloudWatch before
+              internal handover. I build natively with Claude Code and Cursor to
+              accelerate development while maintaining strict testing and code
+              quality.
             </p>
 
             <p>
-              Prior to specializing in AI systems, I spent several years delivering mission-critical ERP, logistics, and e-commerce platforms. As Senior Software Engineer at Ramaki Group, I led an 8-engineer team delivering{' '}
+              Prior to specializing in AI systems, I spent several years
+              delivering mission-critical ERP, logistics, and e-commerce
+              platforms. As Senior Software Engineer at Ramaki Group, I led an
+              8-engineer team delivering{' '}
               <a
                 href="https://dara.af/"
                 target="_blank"
@@ -83,7 +102,10 @@ export default function About() {
               >
                 Dara.af
               </a>
-              , handling high-volume transactions and relational database architecture. At Peace Global Logistics, I translated logistics operations into resilient NestJS/PostgreSQL systems serving 200+ daily business users.
+              , handling high-volume transactions and relational database
+              architecture. At Peace Global Logistics, I translated logistics
+              operations into resilient NestJS/PostgreSQL systems serving 200+
+              daily business users.
             </p>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
               Work Experience
@@ -91,9 +113,24 @@ export default function About() {
             <ul className="mb-4 list-inside list-disc space-y-4 text-base text-zinc-600 dark:text-zinc-400">
               <li>
                 <strong>
-                  Software Development Specialist (AI/ML) – Fixed-Term Summer Contract
+                  Software Development Specialist (AI/ML) – Fixed-Term Summer
+                  Contract
                 </strong>{' '}
-                at Konecranes (05/2026 – 08/2026): Built multiple production-ready RAG applications on AWS Bedrock using Agents and AgentCore, processing 100+ internal XML, PDF, and XLSX documents indexed in an S3-based vector store. Implemented RAG variants with AWS Bedrock, Bedrock AgentCore, LangChain, and LangGraph in a unified Next.js + FastAPI application with a shared conversational UI — developed primarily with Claude Code and Cursor. Architected a multi-agent system with a supervisor agent orchestrating collaborator agents. Used PostgreSQL for user accounts, session data, and feedback storage to evaluate three RAG variants. Deployed on AWS Amplify, ECS, and RDS; established CloudWatch monitoring and error tracking to resolve retrieval accuracy and latency bottlenecks; collaborated with domain stakeholders, documented the system, and handed it over to the internal team.
+                at Konecranes (05/2026 – 08/2026): Built multiple
+                production-ready RAG applications on AWS Bedrock using Agents
+                and AgentCore, processing 100+ internal XML, PDF, and XLSX
+                documents indexed in an S3-based vector store. Implemented RAG
+                variants with AWS Bedrock, Bedrock AgentCore, LangChain, and
+                LangGraph in a unified Next.js + FastAPI application with a
+                shared conversational UI — developed primarily with Claude Code
+                and Cursor. Architected a multi-agent system with a supervisor
+                agent orchestrating collaborator agents. Used PostgreSQL for
+                user accounts, session data, and feedback storage to evaluate
+                three RAG variants. Deployed on AWS Amplify, ECS, and RDS;
+                established CloudWatch monitoring and error tracking to resolve
+                retrieval accuracy and latency bottlenecks; collaborated with
+                domain stakeholders, documented the system, and handed it over
+                to the internal team.
               </li>
               <li>
                 <strong>Senior Software Engineer</strong> at Ramaki Group of
@@ -170,13 +207,13 @@ export default function About() {
             </h2>
             <ul className="mb-4 list-inside list-disc text-base text-zinc-600 dark:text-zinc-400">
               <li>
-                <strong>English</strong>
+                <strong>English (Fluent / Professional)</strong>
               </li>
               <li>
-                <strong>Persian</strong>
+                <strong>Persian (Native)</strong>
               </li>
               <li>
-                <strong>Finnish</strong>
+                <strong>Finnish (A1 Level – Actively Learning)</strong>
               </li>
             </ul>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
@@ -184,13 +221,18 @@ export default function About() {
             </h2>
             <ul className="mb-4 list-inside list-disc text-base text-zinc-600 dark:text-zinc-400">
               <li>
-                <strong>LangGraph &amp; LangChain, Multi-Agent Systems &amp; RAG Architectures</strong>
+                <strong>
+                  LangGraph &amp; LangChain, Multi-Agent Systems &amp; RAG
+                  Architectures
+                </strong>
               </li>
               <li>
                 <strong>AWS Bedrock (Agents &amp; AgentCore)</strong>
               </li>
               <li>
-                <strong>Claude Code &amp; Cursor (AI-Assisted Engineering)</strong>
+                <strong>
+                  Claude Code &amp; Cursor (AI-Assisted Engineering)
+                </strong>
               </li>
               <li>
                 <strong>Python, FastAPI &amp; TypeScript/NestJS</strong>
@@ -202,7 +244,9 @@ export default function About() {
                 <strong>Docker, Kubernetes &amp; AWS Cloud</strong>
               </li>
               <li>
-                <strong>PyTorch, scikit-learn &amp; Multi-Objective Optimization</strong>
+                <strong>
+                  PyTorch, scikit-learn &amp; Multi-Objective Optimization
+                </strong>
               </li>
             </ul>
           </div>
