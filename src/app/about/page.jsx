@@ -109,7 +109,7 @@ export default function About() {
             <ul className="mb-4 list-inside list-disc space-y-4 text-base text-zinc-600 dark:text-zinc-400">
               <li>
                 <strong>
-                  Summer Trainee, Software Development Specialist (AI/ML)
+                  Software Development Specialist (AI/ML) – Fixed-Term Summer Contract
                 </strong>{' '}
                 at Konecranes (05/2026 – Present): Built multiple
                 production-ready RAG applications on AWS Bedrock using Agents

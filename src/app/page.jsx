@@ -181,7 +181,8 @@ function Resume() {
   let resume = [
     {
       company: 'Konecranes',
-      title: 'Summer Trainee, Software Development Specialist (AI/ML)',
+      title:
+        'Software Development Specialist (AI/ML) – Fixed-Term Summer Contract',
       logo: logoKonecranes, // add import at top
       start: 'May 2026',
       end: { label: 'Present', dateTime: new Date().getFullYear().toString() },
