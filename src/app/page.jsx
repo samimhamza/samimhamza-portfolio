@@ -300,16 +300,30 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            AI &amp; Senior Software Engineer | Forward Deployed AI/ML, Agentic Systems &amp; Full-Stack Architecture
+            AI &amp; Senior Software Engineer | Forward Deployed AI/ML, Agentic
+            Systems &amp; Full-Stack Architecture
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            AI &amp; Senior Software Engineer with 5+ years of production experience turning complex, ambiguous business challenges into reliable software and intelligent systems. At Konecranes, I owned the end-to-end delivery of an enterprise RAG and multi-agent assistant—evaluating architectural trade-offs across AWS Bedrock, LangGraph, and LangChain, integrating feedback loops in PostgreSQL, and deploying to AWS before handover.
+            AI &amp; Senior Software Engineer with 5 years of production
+            experience turning complex, ambiguous business challenges into
+            reliable software and intelligent systems. At Konecranes, I owned
+            the end-to-end delivery of an enterprise RAG and multi-agent
+            assistant—evaluating architectural trade-offs across AWS Bedrock,
+            LangGraph, and LangChain, integrating feedback loops in PostgreSQL,
+            and deploying to AWS before handover.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Earlier in my career, I led engineering teams and delivered production ERP, logistics, and transactional platforms. I combine robust software engineering fundamentals (Python, FastAPI, TypeScript, PostgreSQL, Docker, AWS) with applied AI and agentic orchestration, developing daily with AI-assisted coding tools (Claude Code, Cursor) to ship production-grade code rapidly.
+            Earlier in my career, I led engineering teams and delivered
+            production ERP, logistics, and transactional platforms. I combine
+            robust software engineering fundamentals (Python, FastAPI,
+            TypeScript, PostgreSQL, Docker, AWS) with applied AI and agentic
+            orchestration, developing daily with AI-assisted coding tools
+            (Claude Code, Cursor) to ship production-grade code rapidly.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            <strong>Top Skills: </strong> Python, FastAPI, LangGraph / LangChain, AWS Bedrock (Agents/AgentCore), Multi-Agent Systems, RAG Architectures, Claude Code / Cursor, Next.js, PostgreSQL, Docker/K8s
+            <strong>Top Skills: </strong> Python, FastAPI, LangGraph /
+            LangChain, AWS Bedrock (Agents/AgentCore), Multi-Agent Systems, RAG
+            Architectures, Claude Code / Cursor, Next.js, PostgreSQL, Docker/K8s
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

@@ -68,7 +68,7 @@ export default function About() {
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
               AI &amp; Senior Software Engineer and Master&apos;s student in
-              Artificial Intelligence at the University of Jyväskylä, with 5+
+              Artificial Intelligence at the University of Jyväskylä, with 5
               years of experience delivering production systems across AI,
               full-stack, and distributed architectures. I turn complex,
               ambiguous business problems into reliable software and intelligent
