@@ -13,7 +13,7 @@ export const metadata = {
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Projects that I have built and contributed to."
+      title="Selected Projects"
       intro="Applied AI, enterprise RAG, backend services, and full-stack business systems. From internal enterprise knowledge assistants and multi-agent orchestration to e-commerce and logistics platforms."
     >
       <ProjectList projects={projects} />

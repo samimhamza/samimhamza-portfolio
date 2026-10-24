@@ -226,7 +226,7 @@ export const skillCategories = [
     ],
   },
   {
-    title: 'Data & Relational Databases',
+    title: 'Data, Databases & Caching',
     skills: [
       'PostgreSQL',
       'Relational Schema Design',
@@ -286,9 +286,6 @@ export const skillCategories = [
       'Kubernetes',
     ],
     note: 'Academic coursework and thesis research; separated from production implementations.',
-    relatedProjects: [
-      { name: 'Health Information RAG', href: '/projects#health-rag' },
-    ],
   },
 ]
 
@@ -389,7 +386,6 @@ export const projects = [
   {
     id: 'health-rag',
     name: 'Health Information RAG Chatbot',
-    subtitle: 'University of Jyväskylä',
     date: '2026',
     context: 'University of Jyväskylä, academic project',
     description:
@@ -423,9 +419,9 @@ export const projects = [
     id: 'tgl-supplies',
     name: 'TGL Supplies System',
     date: '08/2023 – 12/2023',
-    context: 'Commercial client project',
+    context: 'Peace Global Logistics',
     description:
-      'High-performance website and management information system built with Node.js and Express.js for the backend, React.js for the frontend, and PostgreSQL for structured data storage.',
+      'Built a website and management information system using Node.js and Express for the backend, React for the frontend, and PostgreSQL for data storage.',
     link: {
       href: 'https://tglsupplies.com/',
       label: 'tglsupplies.com',
@@ -438,8 +434,8 @@ export const projects = [
   {
     id: 'united-cars',
     name: 'United Used Cars Website and MIS',
-    date: '2021 – 2022',
-    context: 'Commercial client project',
+    date: '2022 – 2023',
+    context: 'Peace Global Logistics',
     description:
       'Full website and management information system for a used car trading company. Built with Laravel, Next.js, Material UI, and MySQL.',
     link: {
@@ -471,9 +467,9 @@ export const projects = [
     id: 'teebalhoor',
     name: 'TeebAlhoor ERP System',
     date: '08/2021 – 05/2022',
-    context: 'Commercial client project',
+    context: 'Smart Friqi',
     description:
-      'Complex ERP system for TeebAlhoor, a UAE-based trading company, built with Laravel, Nuxt.js, and PostgreSQL.',
+      'ERP system for TeebAlhoor, a UAE-based trading company, built with Laravel, Nuxt.js, and PostgreSQL.',
     link: {
       href: 'https://github.com/samimhamza/teebalhoorfrontend',
       label: 'github.com',
@@ -500,4 +496,3 @@ export const projects = [
     featured: false,
   },
 ]
-
