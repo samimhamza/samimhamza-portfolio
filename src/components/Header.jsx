@@ -77,10 +77,10 @@ function MoonIcon(props) {
   )
 }
 
-function MobileNavItem({ href, children }) {
+function MobileNavItem({ href, children, ...props }) {
   return (
     <li>
-      <PopoverButton as={Link} href={href} className="block py-2">
+      <PopoverButton as={Link} href={href} className="block py-2" {...props}>
         {children}
       </PopoverButton>
     </li>
@@ -115,10 +115,9 @@ function MobileNavigation(props) {
           <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
             <MobileNavItem href="/">Home</MobileNavItem>
             <MobileNavItem href="/about">About</MobileNavItem>
-            {/* <MobileNavItem href="/articles">Articles</MobileNavItem> */}
             <MobileNavItem href="/projects">Projects</MobileNavItem>
             <MobileNavItem href="/skills">Skills</MobileNavItem>
-            {/* <MobileNavItem href="/blog">Blog</MobileNavItem> */}
+            <MobileNavItem href="/cv" target="_blank">CV</MobileNavItem>
           </ul>
         </nav>
       </PopoverPanel>
@@ -126,13 +125,14 @@ function MobileNavigation(props) {
   )
 }
 
-function NavItem({ href, children }) {
+function NavItem({ href, target, children }) {
   let isActive = usePathname() === href
 
   return (
     <li>
       <Link
         href={href}
+        target={target}
         className={clsx(
           'relative block px-3 py-2 transition',
           isActive
@@ -151,14 +151,13 @@ function NavItem({ href, children }) {
 
 function DesktopNavigation(props) {
   return (
-    <nav {...props}>
+    <nav {...props} aria-label="Main Navigation">
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         <NavItem href="/">Home</NavItem>
         <NavItem href="/about">About</NavItem>
-        {/* <NavItem href="/articles">Articles</NavItem> */}
         <NavItem href="/projects">Projects</NavItem>
         <NavItem href="/skills">Skills</NavItem>
-        {/* <NavItem href="/blog">Blog</NavItem> */}
+        <NavItem href="/cv" target="_blank">CV</NavItem>
       </ul>
     </nav>
   )
@@ -214,7 +213,7 @@ function Avatar({ large = false, className, ...props }) {
     >
       <Image
         src={avatarImage}
-        alt=""
+        alt="Ahmad Samim Hamza"
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
           'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',

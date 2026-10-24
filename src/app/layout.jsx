@@ -4,16 +4,30 @@ import { Layout } from '@/components/Layout'
 import '@/styles/tailwind.css'
 
 export const metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || 'https://www.samimhamza.com',
+  ),
   title: {
-    template: '%s - Ahmad Samim Hamza',
-    default: 'Ahmad Samim Hamza | AI & Senior Software Engineer',
+    template: '%s | Ahmad Samim Hamza',
+    default: 'Ahmad Samim Hamza | AI Engineer & Senior Software Engineer',
   },
   description:
-    'AI Engineer & Senior Software Engineer | Full-Stack Development',
+    'Portfolio of Ahmad Samim Hamza, an AI Engineer and Senior Software Engineer building enterprise AI applications, backend services, and full-stack platforms.',
   alternates: {
     types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
+      'application/rss+xml': `${
+        process.env.NEXT_PUBLIC_SITE_URL || 'https://www.samimhamza.com'
+      }/feed.xml`,
     },
+  },
+  openGraph: {
+    title: 'Ahmad Samim Hamza | AI Engineer & Senior Software Engineer',
+    description:
+      'Portfolio of Ahmad Samim Hamza, an AI Engineer and Senior Software Engineer building enterprise AI applications, backend services, and full-stack platforms.',
+    url: 'https://www.samimhamza.com',
+    siteName: 'Ahmad Samim Hamza',
+    locale: 'en_US',
+    type: 'website',
   },
 }
 

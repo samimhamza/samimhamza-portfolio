@@ -10,6 +10,15 @@ const nextConfig = {
       '/articles/*': ['./src/app/articles/**/*.mdx'],
     },
   },
+  async redirects() {
+    return [
+      {
+        source: '/cv',
+        destination: '/cv.pdf',
+        permanent: false,
+      },
+    ]
+  },
 }
 
 const withMDX = nextMDX({

@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
@@ -12,13 +11,13 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
-import logoPGL from '@/images/logos/pgl.png'
-import logoSmartFriqi from '@/images/logos/smart_friqi.svg'
-import logoRamaki from '@/images/logos/ramaki_logo.png'
-import logoKonecranes from '@/images/logos/konecranes_logo.jpg'
-import logoTwistedBits from '@/images/logos/twisted_bits.png'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import { projects } from './projects/page'
+import {
+  capabilities,
+  compactSkills,
+  experience,
+  personalInfo,
+  projects,
+} from '@/data/portfolio'
 
 function MailIcon(props) {
   return (
@@ -79,17 +78,38 @@ export function ArrowDownIcon(props) {
   )
 }
 
-function Project({ project }) {
+function ArrowRightIcon(props) {
   return (
-    <Card as="project">
-      <Card.Title href={project.link?.href} target="_blank">
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
+      <path
+        d="M6.75 3.75 11 8l-4.25 4.25M10.25 8H3"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
+function ProjectCard({ project }) {
+  let projectHref = project.link?.href || `/projects#${project.id}`
+  let isExternal = Boolean(project.link?.href)
+
+  return (
+    <Card as="article">
+      <Card.Title
+        href={projectHref}
+        target={isExternal ? '_blank' : undefined}
+      >
         {project.name}
       </Card.Title>
-      {project.subtitle && (
-        <p className="relative z-10 -mt-1 text-xs font-medium text-teal-600 dark:text-teal-400">
-          {project.subtitle}
-        </p>
-      )}
+      <div className="relative z-10 mt-1 flex flex-wrap items-center gap-x-2 text-xs text-zinc-500 dark:text-zinc-400">
+        <span className="font-medium text-teal-600 dark:text-teal-400">
+          {project.context}
+        </span>
+        <span aria-hidden="true">·</span>
+        <time>{project.date}</time>
+      </div>
       <Card.Description>{project.description}</Card.Description>
       {project.tags && project.tags.length > 0 && (
         <div className="relative z-10 mt-3 flex flex-wrap gap-1.5">
@@ -115,56 +135,24 @@ function SocialLink({ icon: Icon, ...props }) {
   )
 }
 
-function Newsletter() {
-  return (
-    <form
-      action="/thank-you"
-      className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
-    >
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Stay up to date</span>
-      </h2>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get notified when I publish something new, and unsubscribe at any time.
-      </p>
-      <div className="mt-6 flex">
-        <input
-          type="email"
-          placeholder="Email address"
-          aria-label="Email address"
-          required
-          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10"
-        />
-        <Button type="submit" className="ml-4 flex-none">
-          Join
-        </Button>
-      </div>
-    </form>
-  )
-}
-
 function Role({ role }) {
-  let startLabel =
-    typeof role.start === 'string' ? role.start : role.start.label
-  let startDate =
-    typeof role.start === 'string' ? role.start : role.start.dateTime
-
-  let endLabel = typeof role.end === 'string' ? role.end : role.end.label
-  let endDate = typeof role.end === 'string' ? role.end : role.end.dateTime
-
   return (
     <li className="flex gap-4">
       <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
         {role.company === 'Konecranes' ? (
           <Image
-            src={logoKonecranes}
-            alt=""
+            src={role.logo}
+            alt={`${role.company} logo`}
             className="h-7 w-20 object-contain"
             unoptimized
           />
         ) : (
-          <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+          <Image
+            src={role.logo}
+            alt={`${role.company} logo`}
+            className="h-7 w-7 object-contain"
+            unoptimized
+          />
         )}
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
@@ -179,16 +167,14 @@ function Role({ role }) {
         </dd>
         <dt className="sr-only">Role</dt>
         <dd className="text-xs text-zinc-500 dark:text-zinc-400">
-          {role.title}
+          {role.role}
         </dd>
         <dt className="sr-only">Date</dt>
         <dd
           className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-          aria-label={`${startLabel} until ${endLabel}`}
+          aria-label={role.period}
         >
-          <time dateTime={startDate}>{startLabel}</time>{' '}
-          <span aria-hidden="true">—</span>{' '}
-          <time dateTime={endDate}>{endLabel}</time>
+          {role.period}
         </dd>
       </dl>
     </li>
@@ -196,62 +182,15 @@ function Role({ role }) {
 }
 
 function Resume() {
-  let resume = [
-    {
-      company: 'Konecranes',
-      title:
-        'Software Development Specialist (AI/ML) – Fixed-Term Summer Contract',
-      location: 'Hyvinkää, Finland',
-      logo: logoKonecranes,
-      start: 'May 2026',
-      end: 'Aug 2026',
-    },
-    {
-      company: 'Ramaki Group Of Companies',
-      title: 'Senior Software Engineer',
-      logo: logoRamaki,
-      start: 'May 2024',
-      end: 'July 2025',
-    },
-    {
-      company: 'Peace Global Logistics',
-      title: 'Software Engineer',
-      logo: logoPGL,
-      start: 'Sep 2022',
-      end: 'April 2024',
-    },
-    {
-      company: 'Kabul University',
-      title: 'Instructor (Python & Machine Learning)',
-      logo: logoCosmos,
-      start: 'April 2022',
-      end: 'Oct 2022',
-    },
-    {
-      company: 'Smart Friqi',
-      title: 'Full Stack Developer',
-      logo: logoSmartFriqi,
-      start: 'July 2021',
-      end: 'Sep 2022',
-    },
-    {
-      company: 'TwistedBits ICT',
-      title: 'Web Developer',
-      logo: logoTwistedBits,
-      start: 'May 2021',
-      end: 'July 2021',
-    },
-  ]
-
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
+        <span className="ml-3">Work Experience</span>
       </h2>
-      <ol className="mt-6 space-y-4">
-        {resume.map((role, roleIndex) => (
-          <Role key={roleIndex} role={role} />
+      <ol className="mt-6 space-y-5">
+        {experience.map((role) => (
+          <Role key={`${role.company}-${role.period}`} role={role} />
         ))}
       </ol>
       <Button
@@ -267,26 +206,28 @@ function Resume() {
   )
 }
 
-function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
-
+function CapabilitiesSection() {
   return (
-    <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
-          <div
-            key={image.src}
-            className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
-              rotations[imageIndex % rotations.length],
-            )}
-          >
-            <Image
-              src={image}
-              alt=""
-              sizes="(min-width: 640px) 18rem, 11rem"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
+    <div className="mt-14 rounded-2xl border border-zinc-100 p-6 sm:p-8 dark:border-zinc-700/40 dark:bg-zinc-900/20">
+      <h2 className="text-sm font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400">
+        Core Capabilities
+      </h2>
+      <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {capabilities.map((item) => (
+          <div key={item.title} className="flex flex-col">
+            <h3 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+              {item.title}
+            </h3>
+            <p className="mt-1.5 flex-auto text-xs text-zinc-600 dark:text-zinc-400">
+              {item.description}
+            </p>
+            <Link
+              href={item.projectLink}
+              className="mt-3 inline-flex items-center text-xs font-medium text-teal-600 transition hover:text-teal-500 dark:text-teal-400 dark:hover:text-teal-300"
+            >
+              <span>{item.projectLabel}</span>
+              <ArrowRightIcon className="ml-1 h-3 w-3 stroke-current" />
+            </Link>
           </div>
         ))}
       </div>
@@ -295,82 +236,113 @@ function Photos() {
 }
 
 export default async function Home() {
+  let featuredProjects = projects.filter((p) => p.featured).slice(0, 4)
+
   return (
     <>
       <Container className="mt-9">
-        <div className="max-w-2xl">
+        <div className="max-w-3xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            AI Engineer & Senior Software Engineer | Full-Stack Development
+            {personalInfo.heroHeadline}
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m an AI Engineer and Senior Software Engineer with experience
-            building enterprise AI applications, backend services, and
-            full-stack platforms. At Konecranes, I delivered a RAG and
-            multi-agent assistant on AWS. Previously, I led a team of eight
-            engineers and developed e-commerce, logistics, and ERP systems. My
-            core stack includes Python, TypeScript, React, Next.js, PostgreSQL,
-            and AWS.
+          <p className="mt-3 text-lg font-medium text-teal-600 sm:text-xl dark:text-teal-400">
+            {personalInfo.heroSupportingLine}
           </p>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Earlier in my career, I led engineering teams and delivered
-            production ERP, logistics, and transactional platforms. I combine
-            robust software engineering fundamentals (Python, FastAPI,
-            TypeScript, PostgreSQL, Docker, AWS) with applied AI and agentic
-            orchestration, developing daily with AI-assisted coding tools
-            (Claude Code, Cursor) to ship production-grade code rapidly.
+          <p className="mt-6 text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
+            {personalInfo.heroIntro}
           </p>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            <strong>Top Skills: </strong>
-            Python · TypeScript · FastAPI · PHP · Laravel · React / Next.js ·
-            NestJS · PostgreSQL · AWS · Docker · RAG & Agentic Systems
+          <p className="mt-5 text-sm text-zinc-600 dark:text-zinc-400">
+            <strong className="font-semibold text-zinc-800 dark:text-zinc-200">
+              Top Skills:{' '}
+            </strong>
+            {compactSkills.join(' · ')}
           </p>
-          <div className="mt-6 flex gap-6">
+
+          <div className="mt-8 flex flex-wrap items-center gap-4">
+            <Button href="/projects">View Projects</Button>
+            <Button
+              href="/cv"
+              target="_blank"
+              variant="secondary"
+              className="group"
+            >
+              Download CV
+              <ArrowDownIcon className="ml-2 h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+            </Button>
+            <Button
+              href={personalInfo.links.email}
+              variant="secondary"
+              className="group"
+            >
+              <MailIcon className="mr-2 h-4 w-4 stroke-zinc-400 transition group-hover:stroke-zinc-600 dark:stroke-zinc-400 dark:group-hover:stroke-zinc-200" />
+              Contact
+            </Button>
+          </div>
+
+          <div className="mt-8 flex gap-6">
             <SocialLink
-              href="https://www.linkedin.com/in/ahmadsamimhamza"
+              href={personalInfo.links.linkedin}
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
               target="_blank"
             />
             <SocialLink
-              href="https://www.facebook.com/ahmadsamim.hamzaei/"
-              aria-label="Follow on Facebook"
-              icon={FacebookIcon}
-              target="_blank"
-            />
-            <SocialLink
-              href="https://www.instagram.com/samim.hz/"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-              target="_blank"
-            />
-            <SocialLink
-              href="https://github.com/samimhamza"
+              href={personalInfo.links.github}
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
               target="_blank"
             />
             <SocialLink
-              href="https://x.com/SamimHamza1"
+              href={personalInfo.links.x}
               aria-label="Follow on X"
               target="_blank"
               icon={XIcon}
             />
+            <SocialLink
+              href={personalInfo.links.facebook}
+              aria-label="Follow on Facebook"
+              icon={FacebookIcon}
+              target="_blank"
+            />
+            <SocialLink
+              href={personalInfo.links.instagram}
+              aria-label="Follow on Instagram"
+              icon={InstagramIcon}
+              target="_blank"
+            />
           </div>
+
+          <CapabilitiesSection />
         </div>
       </Container>
-      {/* <Photos /> */}
-      <Container className="mt-10 md:mt-12">
+
+      <Container className="mt-14 md:mt-16">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
-            <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-3xl dark:text-zinc-100">
-              Featured Projects
-            </h2>
-            {projects.map((project) => (
-              <Project key={project.name} project={project} />
-            ))}
+          <div className="flex flex-col gap-12">
+            <div className="flex items-center justify-between">
+              <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-3xl dark:text-zinc-100">
+                Featured Projects
+              </h2>
+              <Link
+                href="/projects"
+                className="inline-flex items-center text-sm font-medium text-teal-600 hover:text-teal-500 dark:text-teal-400 dark:hover:text-teal-300"
+              >
+                All projects
+                <ArrowRightIcon className="ml-1 h-3.5 w-3.5 stroke-current" />
+              </Link>
+            </div>
+            <div className="flex flex-col gap-12">
+              {featuredProjects.map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </div>
+            <div className="pt-2">
+              <Button href="/projects" variant="secondary" className="w-full sm:w-auto">
+                Explore All Projects &rarr;
+              </Button>
+            </div>
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            {/* <Newsletter /> */}
             <Resume />
           </div>
         </div>
