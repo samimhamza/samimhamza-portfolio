@@ -271,7 +271,7 @@ export const skillCategories = [
   },
   {
     title: 'AI-Assisted Development',
-    skills: ['Claude Code', 'Cursor'],
+    skills: ['Claude Code', 'Cursor', 'Antigravity'],
     note: 'Used throughout development while retaining responsibility for architecture, code review, and testing.',
     relatedProjects: [
       { name: 'Enterprise RAG Assistant', href: '/projects#enterprise-rag' },
@@ -280,6 +280,7 @@ export const skillCategories = [
   {
     title: 'Academic Knowledge & Familiarity',
     skills: [
+      'Semantic Web (Ontologies, RDF, OWL, SPARQL)',
       'PyTorch',
       'scikit-learn',
       'Multi-Objective Optimization',
