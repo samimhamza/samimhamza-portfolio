@@ -304,13 +304,13 @@ export default async function Home() {
             Systems &amp; Full-Stack Architecture
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            AI &amp; Senior Software Engineer with 5 years of production
-            experience turning complex, ambiguous business challenges into
-            reliable software and intelligent systems. At Konecranes, I owned
-            the end-to-end delivery of an enterprise RAG and multi-agent
-            assistant—evaluating architectural trade-offs across AWS Bedrock,
-            LangGraph, and LangChain, integrating feedback loops in PostgreSQL,
-            and deploying to AWS before handover.
+            I’m an AI Engineer and Senior Software Engineer with experience
+            building enterprise AI applications, backend services, and
+            full-stack platforms. At Konecranes, I delivered a RAG and
+            multi-agent assistant on AWS. Previously, I led a team of eight
+            engineers and developed e-commerce, logistics, and ERP systems. My
+            core stack includes Python, TypeScript, React, Next.js, PostgreSQL,
+            and AWS.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             Earlier in my career, I led engineering teams and delivered
@@ -321,9 +321,9 @@ export default async function Home() {
             (Claude Code, Cursor) to ship production-grade code rapidly.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            <strong>Top Skills: </strong> Python, FastAPI, LangGraph /
-            LangChain, AWS Bedrock (Agents/AgentCore), Multi-Agent Systems, RAG
-            Architectures, Claude Code / Cursor, Next.js, PostgreSQL, Docker/K8s
+            <strong>Top Skills: </strong>
+            Python · TypeScript · FastAPI · PHP · Laravel · React / Next.js ·
+            NestJS · PostgreSQL · AWS · Docker · RAG & Agentic Systems
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

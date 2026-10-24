@@ -62,8 +62,7 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Samim Hamza. AI &amp; Senior Software Engineer turning complex
-            problems into production systems.
+            AI Engineer & Senior Software Engineer
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
@@ -90,10 +89,10 @@ export default function About() {
             </p>
 
             <p>
-              Prior to specializing in AI systems, I spent several years
-              delivering mission-critical ERP, logistics, and e-commerce
-              platforms. As Senior Software Engineer at Ramaki Group, I led an
-              8-engineer team delivering{' '}
+              Alongside my AI engineering experience, I bring several years of
+              backend and full-stack development across ERP, logistics, and
+              e-commerce platforms. As Senior Software Engineer at Ramaki Group,
+              I led an 8-engineer team delivering{' '}
               <a
                 href="https://dara.af/"
                 target="_blank"
@@ -104,8 +103,8 @@ export default function About() {
               </a>
               , handling high-volume transactions and relational database
               architecture. At Peace Global Logistics, I translated logistics
-              operations into resilient NestJS/PostgreSQL systems serving 200+
-              daily business users.
+              operations into resilient NestJS/PostgreSQL systems serving daily
+              business users.
             </p>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
               Work Experience
@@ -156,8 +155,7 @@ export default function About() {
                 modules using NestJS, React, and Next.js; designed PostgreSQL
                 databases and optimized complex queries; implemented reusable UI
                 components in React + Tailwind; and collaborated with
-                cross-functional teams to deliver ERP features for 200+ daily
-                users.
+                cross-functional teams to deliver ERP features for daily users.
               </li>
               <li>
                 <strong>Instructor (Python &amp; Machine Learning)</strong> at
@@ -167,15 +165,15 @@ export default function About() {
                 and practical ML tooling.
               </li>
               <li>
-                <strong>Full Stack Developer</strong> at Smart Friqi (26/07/2021
-                – 20/09/2022): Built ERP modules using Laravel, Nuxt.js, and
+                <strong>Full Stack Developer</strong> at Smart Friqi (07/2021 –
+                09/2022): Built ERP modules using Laravel, Nuxt.js, and
                 PostgreSQL; added real-time functionality with WebSockets; and
                 developed dashboards and admin interfaces for business
                 operations.
               </li>
               <li>
-                <strong>Web Developer</strong> at TwistedBits ICT (01/05/2021 –
-                15/07/2021): Built two management information systems using PHP,
+                <strong>Web Developer</strong> at TwistedBits ICT (05/2021 –
+                07/2021): Built two management information systems using PHP,
                 JavaScript, Laravel, and Vue.js, delivering projects under tight
                 deadlines with a small team.
               </li>
@@ -207,13 +205,13 @@ export default function About() {
             </h2>
             <ul className="mb-4 list-inside list-disc text-base text-zinc-600 dark:text-zinc-400">
               <li>
-                <strong>English (Fluent / Professional)</strong>
-              </li>
-              <li>
-                <strong>Persian (Native)</strong>
+                <strong>English (Fluent)</strong>
               </li>
               <li>
                 <strong>Finnish (A1 Level – Actively Learning)</strong>
+              </li>
+              <li>
+                <strong>Persian (Native)</strong>
               </li>
             </ul>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
@@ -222,30 +220,35 @@ export default function About() {
             <ul className="mb-4 list-inside list-disc text-base text-zinc-600 dark:text-zinc-400">
               <li>
                 <strong>
-                  LangGraph &amp; LangChain, Multi-Agent Systems &amp; RAG
-                  Architectures
+                  Backend: Python, FastAPI, TypeScript, NestJS, PHP, Laravel
                 </strong>
               </li>
               <li>
-                <strong>AWS Bedrock (Agents &amp; AgentCore)</strong>
+                <strong>Frontend: React, Next.js, Vue.js, Nuxt.js</strong>
               </li>
               <li>
                 <strong>
-                  Claude Code &amp; Cursor (AI-Assisted Engineering)
+                  Data: PostgreSQL, database design, query optimization
                 </strong>
               </li>
               <li>
-                <strong>Python, FastAPI &amp; TypeScript/NestJS</strong>
-              </li>
-              <li>
-                <strong>Next.js, React &amp; PostgreSQL</strong>
-              </li>
-              <li>
-                <strong>Docker, Kubernetes &amp; AWS Cloud</strong>
+                <strong>
+                  Applied AI: RAG, multi-agent systems, LangChain, LangGraph,
+                  AWS Bedrock
+                </strong>
               </li>
               <li>
                 <strong>
-                  PyTorch, scikit-learn &amp; Multi-Objective Optimization
+                  Cloud and delivery: AWS, Docker, CI/CD, monitoring
+                </strong>
+              </li>
+              <li>
+                <strong>AI-assisted development: Claude Code, Cursor</strong>
+              </li>
+              <li>
+                <strong>
+                  Academic knowledge: PyTorch, scikit-learn, multi-objective
+                  optimization
                 </strong>
               </li>
             </ul>

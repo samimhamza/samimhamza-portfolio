@@ -9,7 +9,7 @@ export const metadata = {
     default: 'Ahmad Samim Hamza | AI & Senior Software Engineer',
   },
   description:
-    'AI & Senior Software Engineer specializing in Forward Deployed AI/ML, Agentic Systems & Full-Stack Architecture.',
+    'AI Engineer & Senior Software Engineer | Full-Stack Development',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

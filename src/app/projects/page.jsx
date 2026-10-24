@@ -41,6 +41,14 @@ export const projects = [
     tags: ['Next.js', 'React', 'Laravel', 'PostgreSQL', 'E-Commerce'],
   },
   {
+    name: 'PGL ERP System',
+    description:
+      'ERP system for Peace Global Logistics covering logistics, shipments, HR, and inventory modules. Built with NestJS, React, Next.js, and PostgreSQL.',
+    link: { href: 'https://pglsystem.com/', label: 'pglsystem.com' },
+    logo: logPGL,
+    tags: ['NestJS', 'React', 'Next.js', 'PostgreSQL', 'ERP'],
+  },
+  {
     name: 'Health Information RAG Chatbot',
     subtitle: 'University of Jyväskylä',
     description:
@@ -56,25 +64,6 @@ export const projects = [
     ],
   },
   {
-    name: 'United Used Cars Website and MIS',
-    description:
-      'Full website and management information system for a used car trading company. Built with Laravel, Next.js, Material UI, and MySQL.',
-    link: {
-      href: 'https://unitedtradingcars.com/',
-      label: 'unitedtradingcars.com',
-    },
-    logo: unitedLogo,
-    tags: ['Next.js', 'Laravel', 'Material UI', 'MySQL'],
-  },
-  {
-    name: 'PGL ERP System',
-    description:
-      'ERP system for Peace Global Logistics covering logistics, shipments, HR, and inventory modules. Built with NestJS, React, Next.js, and PostgreSQL.',
-    link: { href: 'https://pglsystem.com/', label: 'pglsystem.com' },
-    logo: logPGL,
-    tags: ['NestJS', 'React', 'Next.js', 'PostgreSQL', 'ERP'],
-  },
-  {
     name: 'TGL Supplies System',
     description:
       'High-performance website and management information system built with Node.js and Express.js for the backend, React.js for the frontend, and PostgreSQL for the database.',
@@ -84,6 +73,17 @@ export const projects = [
     },
     logo: logoTglSupplies,
     tags: ['Node.js', 'Express.js', 'React', 'PostgreSQL'],
+  },
+  {
+    name: 'United Used Cars Website and MIS',
+    description:
+      'Full website and management information system for a used car trading company. Built with Laravel, Next.js, Material UI, and MySQL.',
+    link: {
+      href: 'https://unitedtradingcars.com/',
+      label: 'unitedtradingcars.com',
+    },
+    logo: unitedLogo,
+    tags: ['Next.js', 'Laravel', 'Material UI', 'MySQL'],
   },
   {
     name: 'Charity Management System',
@@ -133,7 +133,8 @@ function LinkIcon(props) {
 
 export const metadata = {
   title: 'Projects',
-  description: 'AI/ML, agentic systems, and full-stack projects I have built and contributed to.',
+  description:
+    'AI/ML, agentic systems, and full-stack projects I have built and contributed to.',
 }
 
 export default function Projects() {
