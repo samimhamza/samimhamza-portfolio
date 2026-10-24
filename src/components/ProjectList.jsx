@@ -99,21 +99,12 @@ export function ProjectList({ projects }) {
               className="scroll-mt-24 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-800/80 dark:bg-zinc-900/30 flex flex-col"
             >
               <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                {project.name.includes('Konecranes') ? (
-                  <Image
-                    src={project.logo}
-                    alt=""
-                    className="h-7 w-20 object-contain"
-                    unoptimized
-                  />
-                ) : (
-                  <Image
-                    src={project.logo}
-                    alt=""
-                    className="h-8 w-8 object-contain"
-                    unoptimized
-                  />
-                )}
+                <Image
+                  src={project.logo}
+                  alt=""
+                  className="h-8 w-8 object-contain"
+                  unoptimized
+                />
               </div>
 
               <h2 className="mt-5 text-base font-semibold text-zinc-800 dark:text-zinc-100">
