@@ -10,6 +10,7 @@ import logoTeebAlhoor from '@/images/logos/teebalhoor.svg'
 import logoTglSupplies from '@/images/logos/tglsupplies.png'
 import logoPGT from '@/images/logos/pgt.png'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoAmirSahra from '@/images/logos/amirsahra.svg'
 
 export const personalInfo = {
   fullName: 'Ahmad Samim Hamza',
@@ -205,6 +206,7 @@ export const skillCategories = [
     ],
     relatedProjects: [
       { name: 'Enterprise RAG Assistant', href: '/projects#enterprise-rag' },
+      { name: 'Freight & Logistics ERP', href: '/projects#freight-logistics-erp' },
       { name: 'PGL ERP System', href: '/projects#pgl-erp' },
       { name: 'Dara.af E-Commerce', href: '/projects#dara-af' },
     ],
@@ -275,6 +277,7 @@ export const skillCategories = [
     note: 'Used throughout development while retaining responsibility for architecture, code review, and testing.',
     relatedProjects: [
       { name: 'Enterprise RAG Assistant', href: '/projects#enterprise-rag' },
+      { name: 'Freight & Logistics ERP', href: '/projects#freight-logistics-erp' },
     ],
   },
   {
@@ -414,6 +417,44 @@ export const projects = [
         'Conducted retrieval accuracy and answer quality evaluation using LLM evaluation techniques against curated test questions.',
       outcome:
         'Demonstrated practical domain-specific RAG pipeline construction and empirical retrieval evaluation in an academic setting.',
+    },
+  },
+  {
+    id: 'freight-logistics-erp',
+    name: 'Freight Forwarding & Logistics ERP System',
+    date: '08/2026 – 10/2026',
+    context: 'Freelance, end-to-end ownership',
+    description:
+      'Architected, developed, and deployed a full-scale cloud ERP for international freight forwarding and customs clearance logistics. Engineered end-to-end Master/House Bill of Lading workflows, multi-container tracking with VIN-level vehicle manifests, automated tax-compliant PDF generation, dual-ledger accounting, and role-based access control.',
+    link: {
+      href: 'https://amirsahra.com/',
+      label: 'amirsahra.com',
+    },
+    logo: logoAmirSahra,
+    tags: [
+      'PHP',
+      'Laravel',
+      'Filament',
+      'Livewire',
+      'PostgreSQL',
+      'Tailwind CSS',
+      'PHPUnit',
+      'ERP',
+    ],
+    categories: ['fullstack', 'backend'],
+    featured: false,
+    caseStudy: {
+      problem:
+        'International ocean freight forwarders and cargo clearing agencies often rely on fragmented spreadsheets, disconnected accounting software, and manual email notifications, resulting in documentation errors, delayed arrival notices, and poor visibility into shipment profit margins. Primary users include vessel consolidation coordinators, port clearance agents, and finance officers.',
+      role: 'Sole Architect & Full-Stack Developer (AI-assisted with Antigravity and Cursor). Owned end-to-end development, deployment, and ongoing maintenance: designed relational data architecture, business logic, automated document rendering engines, and test suites.',
+      architecture:
+        'Laravel 13, Filament v5, and Livewire v4 reactive operations panel backed by PostgreSQL. Implements Master/House Bill of Lading hierarchies, container allocations, server-side PDF document generation (Spatie PDF/DomPDF), automated transactional emailing via Resend, and dual-ledger accounting.',
+      decisions:
+        'Adopted unified Filament v5 + Livewire architecture over a detached SPA to eliminate API boilerplate and ensure tight Eloquent database transactions. Implemented server-side PDF rendering for deterministic invoice/B/L generation and linked carrier remittances to client invoices for real-time shipment margin tracking.',
+      evaluation:
+        'Built comprehensive PHPUnit 11 feature test suite covering invoice lifecycles, payment reconciliations, PDF rendering, and role permissions (Filament Shield / Spatie Permission). Enforced PSR-12 code quality with Laravel Pint and deployed production environment at amirsahra.com.',
+      outcome:
+        'Delivered, deployed, and maintain a self-contained, enterprise-grade cloud logistics ERP running on amirsahra.com, reducing document issuance time from hours to seconds and providing real-time visibility into operational cash flows.',
     },
   },
   {
