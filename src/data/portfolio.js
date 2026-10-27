@@ -27,7 +27,7 @@ export const personalInfo = {
   aboutIntroParagraphs: [
     "I'm an AI Engineer and Senior Software Engineer, currently pursuing a Master's degree in Artificial Intelligence at the University of Jyväskylä. I bring 5 years of software engineering experience across enterprise AI applications, backend services, and full-stack business platforms.",
     'At Konecranes, I designed, evaluated, and deployed an enterprise RAG and multi-agent assistant on AWS, integrating AI backends with a Next.js and FastAPI application. I worked with stakeholders, implemented a feedback pipeline, and documented and handed over the system to the internal team.',
-    'My broader software engineering experience includes leading a team of eight engineers on Dara.af and developing ERP and logistics systems used by 200+ daily business users. I work with Python, TypeScript, React, Next.js, NestJS, Laravel, PostgreSQL, and AWS, with an emphasis on maintainable architecture, testing, and practical business needs.',
+    'My broader software engineering experience includes leading a team of eight engineers on Dara.af and developing production ERP and logistics systems. I work with Python, TypeScript, React, Next.js, NestJS, Laravel, PostgreSQL, and AWS, with an emphasis on maintainable architecture, testing, and practical business needs.',
   ],
   aiAssistedStatement:
     'I use Claude Code and Cursor throughout development, while retaining responsibility for architecture, code review, and testing.',
@@ -110,7 +110,7 @@ export const experience = [
     location: 'Kabul, Afghanistan',
     logo: logoPGL,
     bullets: [
-      'Developed ERP and logistics features using NestJS, React, Next.js, and PostgreSQL for 200+ daily users.',
+      'Developed core ERP and logistics features using NestJS, React, Next.js, and PostgreSQL.',
       'Designed relational data models, optimized complex queries, and built reusable React and Tailwind components.',
       'Collaborated with logistics, finance, and operations stakeholders to translate business workflows into application features.',
     ],
@@ -364,7 +364,7 @@ export const projects = [
     date: '09/2022 – 04/2024',
     context: 'Peace Global Logistics, professional project',
     description:
-      'Developed logistics, shipment, HR, finance, and inventory features for an ERP platform serving 200+ daily users. Built APIs, designed PostgreSQL schemas, optimized queries, and implemented interfaces using NestJS, React, and Next.js.',
+      'Developed logistics, shipment, HR, finance, and inventory features for an enterprise ERP platform. Built APIs, designed PostgreSQL schemas, optimized queries, and implemented interfaces using NestJS, React, and Next.js.',
     link: {
       href: 'https://pglsystem.com/',
       label: 'pglsystem.com',
@@ -375,7 +375,7 @@ export const projects = [
     featured: true,
     caseStudy: {
       problem:
-        'Coordinating complex multi-department logistics, shipment handling, HR, inventory, and finance operations for over 200 daily business users.',
+        'Coordinating multi-department logistics, shipment handling, HR, inventory, and finance operations across company-wide branches.',
       role: 'Software Engineer responsible for API development, database architecture, query optimization, and UI implementation.',
       architecture:
         'NestJS modular backend services, PostgreSQL database, React and Next.js frontend interfaces with Tailwind CSS styling.',
