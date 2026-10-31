@@ -207,7 +207,10 @@ export const skillCategories = [
     ],
     relatedProjects: [
       { name: 'Enterprise RAG Assistant', href: '/projects#enterprise-rag' },
-      { name: 'Freight & Logistics ERP', href: '/projects#freight-logistics-erp' },
+      {
+        name: 'Freight & Logistics ERP',
+        href: '/projects#freight-logistics-erp',
+      },
       { name: 'PGL ERP System', href: '/projects#pgl-erp' },
       { name: 'Dara.af E-Commerce', href: '/projects#dara-af' },
     ],
@@ -248,18 +251,23 @@ export const skillCategories = [
     title: 'Applied AI & Agentic Systems',
     skills: [
       'RAG',
+      'Corrective RAG (CRAG)',
       'Multi-Agent Systems',
       'LangChain',
       'LangGraph',
       'AWS Bedrock',
-      'ChromaDB',
-      'Corrective RAG (CRAG)',
+      'Vector Stores (ChromaDB, Qdrant)',
       'Reciprocal Rank Fusion (RRF)',
+      'Hybrid Search (BM25 + Dense Vectors)',
+      'Cross-Encoder Reranking',
       'LLM Evaluation',
     ],
     relatedProjects: [
       { name: 'Enterprise RAG Assistant', href: '/projects#enterprise-rag' },
-      { name: 'CRAG Hybrid Retriever', href: '/projects#crag-hybrid-retriever' },
+      {
+        name: 'CRAG Hybrid Retriever',
+        href: '/projects#crag-hybrid-retriever',
+      },
       { name: 'Health Information RAG', href: '/projects#health-rag' },
     ],
   },
@@ -273,7 +281,10 @@ export const skillCategories = [
     ],
     relatedProjects: [
       { name: 'Enterprise RAG Assistant', href: '/projects#enterprise-rag' },
-      { name: 'CRAG Hybrid Retriever CI', href: '/projects#crag-hybrid-retriever' },
+      {
+        name: 'CRAG Hybrid Retriever CI',
+        href: '/projects#crag-hybrid-retriever',
+      },
     ],
   },
   {
@@ -282,7 +293,10 @@ export const skillCategories = [
     note: 'Used throughout development while retaining responsibility for architecture, code review, and testing.',
     relatedProjects: [
       { name: 'Enterprise RAG Assistant', href: '/projects#enterprise-rag' },
-      { name: 'Freight & Logistics ERP', href: '/projects#freight-logistics-erp' },
+      {
+        name: 'Freight & Logistics ERP',
+        href: '/projects#freight-logistics-erp',
+      },
     ],
   },
   {
@@ -338,7 +352,8 @@ export const projects = [
     id: 'crag-hybrid-retriever',
     name: 'CRAG Hybrid Retriever',
     date: '2026',
-    context: 'Open-source library · Master’s Thesis R&D, University of Jyväskylä',
+    context:
+      'Open-source library · Master’s Thesis R&D, University of Jyväskylä',
     description:
       'Engineered and open-sourced a production-grade Corrective RAG (CRAG) and hybrid retrieval engine in Python. Combines Okapi BM25 sparse retrieval, dense cosine vector search, Reciprocal Rank Fusion (RRF), and ONNX-accelerated cross-encoder reranking with self-reflective confidence grading and automated query reformulation. Includes an end-to-end GitHub Actions CI pipeline executing Ruff linting, formatting checks, Mypy static typing, and Pytest suites on every push.',
     link: {
