@@ -11,6 +11,7 @@ import logoTglSupplies from '@/images/logos/tglsupplies.png'
 import logoPGT from '@/images/logos/pgt.png'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoAmirSahra from '@/images/logos/amirsahra.svg'
+import logoCRAG from '@/images/logos/crag.svg'
 
 export const personalInfo = {
   fullName: 'Ahmad Samim Hamza',
@@ -252,10 +253,13 @@ export const skillCategories = [
       'LangGraph',
       'AWS Bedrock',
       'ChromaDB',
+      'Corrective RAG (CRAG)',
+      'Reciprocal Rank Fusion (RRF)',
       'LLM Evaluation',
     ],
     relatedProjects: [
       { name: 'Enterprise RAG Assistant', href: '/projects#enterprise-rag' },
+      { name: 'CRAG Hybrid Retriever', href: '/projects#crag-hybrid-retriever' },
       { name: 'Health Information RAG', href: '/projects#health-rag' },
     ],
   },
@@ -264,11 +268,12 @@ export const skillCategories = [
     skills: [
       'AWS (Bedrock, ECS, Amplify, RDS, S3, CloudWatch)',
       'Docker',
-      'CI/CD Pipelines',
+      'CI/CD Pipelines (GitHub Actions)',
       'Logging & Monitoring',
     ],
     relatedProjects: [
       { name: 'Enterprise RAG Assistant', href: '/projects#enterprise-rag' },
+      { name: 'CRAG Hybrid Retriever CI', href: '/projects#crag-hybrid-retriever' },
     ],
   },
   {
@@ -327,6 +332,45 @@ export const projects = [
         'Deployed on AWS Amplify, ECS, and RDS. Implemented a PostgreSQL-backed human evaluation pipeline and used CloudWatch with application error tracking to resolve retrieval quality and latency bottlenecks.',
       outcome:
         'Fully documented the system and handed it over to the internal engineering team.',
+    },
+  },
+  {
+    id: 'crag-hybrid-retriever',
+    name: 'CRAG Hybrid Retriever',
+    date: '2026',
+    context: 'Open-source library · Master’s Thesis R&D, University of Jyväskylä',
+    description:
+      'Engineered and open-sourced a production-grade Corrective RAG (CRAG) and hybrid retrieval engine in Python. Combines Okapi BM25 sparse retrieval, dense cosine vector search, Reciprocal Rank Fusion (RRF), and ONNX-accelerated cross-encoder reranking with self-reflective confidence grading and automated query reformulation. Includes an end-to-end GitHub Actions CI pipeline executing Ruff linting, formatting checks, Mypy static typing, and Pytest suites on every push.',
+    link: {
+      href: 'https://github.com/samimhamza/crag-hybrid-retriever',
+      label: 'github.com/samimhamza/crag-hybrid-retriever',
+    },
+    logo: logoCRAG,
+    tags: [
+      'Python',
+      'RAG',
+      'CRAG',
+      'BM25',
+      'Vector Search',
+      'Reranking',
+      'Pydantic',
+      'GitHub Actions',
+      'Pytest',
+    ],
+    categories: ['ai', 'backend'],
+    featured: true,
+    caseStudy: {
+      problem:
+        'Standard single-pass RAG pipelines suffer from vocabulary mismatch (missing exact statutory codes, acronyms, or numeric thresholds) and passive hallucination (passing ambiguous passages directly to generative models without validation). Decoupled from ongoing Master’s thesis research on multi-objective optimization and regulatory compliance verification to serve as an independent, domain-agnostic retrieval engine.',
+      role: 'Sole Author & Maintainer. Architected, implemented, documented, and tested the library end-to-end in Python 3.10–3.12.',
+      architecture:
+        'Dual-track candidate retrieval using Okapi BM25 (token-level lexical index with NFKD normalization) and in-memory cosine dense vector search; rank distribution fusion via Reciprocal Rank Fusion (RRF, k=60); second-stage neural reranking via ONNX-accelerated cross-encoders (FlashRank); and a self-reflective Corrective RAG (CRAG) decision engine with multi-iteration query reformulation.',
+      decisions:
+        'Selected RRF over weighted linear interpolation to eliminate manual hyperparameter tuning across disparate scoring spaces. Added FlashRank cross-attention with a deterministic token-overlap fallback to ensure zero-crash resiliency in offline environments. Integrated an automated GitHub Actions CI pipeline running Ruff linting/formatting, Mypy type-checking, and Pytest coverage on every push to enforce production packaging standards.',
+      evaluation:
+        'Built-in Information Retrieval evaluation suite calculating Precision@K, Recall@K, Mean Reciprocal Rank (MRR), and NDCG@K against ground-truth relevance sets. Covered by automated unit test suites in pytest and verified through deterministic uv environment builds.',
+      outcome:
+        'Published open-source library on GitHub with comprehensive documentation, interactive quickstarts, CI build automation, and academic citation metadata.',
     },
   },
   {
@@ -404,7 +448,7 @@ export const projects = [
       'LLM Evaluation',
     ],
     categories: ['ai'],
-    featured: true,
+    featured: false,
     caseStudy: {
       problem:
         'Academic research project exploring conversational retrieval and answer quality over publicly available health information articles. (Academic project; not for clinical diagnosis or medical advice).',
