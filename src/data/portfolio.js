@@ -16,17 +16,17 @@ import logoCRAG from '@/images/logos/crag.svg'
 export const personalInfo = {
   fullName: 'Ahmad Samim Hamza',
   shortName: 'Samim Hamza',
-  title: 'AI Engineer & Senior Software Engineer',
+  title: 'AI Engineer & Software Engineer',
   supportingDescriptor: 'Full-Stack Development & Applied AI',
-  heroHeadline: 'AI Engineer & Senior Software Engineer',
+  heroHeadline: 'AI Engineer & Software Engineer',
   heroSupportingLine:
     'Building enterprise AI applications, backend services, and full-stack business systems.',
   heroIntro:
     'I build intelligent applications and the software systems around them. My experience spans enterprise RAG and multi-agent assistants, backend services, and full-stack platforms for e-commerce, logistics, and business operations. I work with Python, TypeScript, React, Next.js, PostgreSQL, and AWS, combining practical AI engineering with reliable software delivery.',
   aboutHeading:
-    'Samim Hamza. AI Engineer & Senior Software Engineer building intelligent applications and reliable software systems.',
+    'Samim Hamza. AI Engineer & Software Engineer building intelligent applications and reliable software systems.',
   aboutIntroParagraphs: [
-    "I'm an AI Engineer and Senior Software Engineer, currently pursuing a Master's degree in Artificial Intelligence at the University of Jyväskylä. I bring 5 years of software engineering experience across enterprise AI applications, backend services, and full-stack business platforms.",
+    "I'm an AI Engineer and Software Engineer, currently pursuing a Master's degree in Artificial Intelligence at the University of Jyväskylä. I bring 5 years of software engineering experience across enterprise AI applications, backend services, and full-stack business platforms.",
     'At Konecranes, I designed, evaluated, and deployed an enterprise RAG and multi-agent assistant on AWS, integrating AI backends with a Next.js and FastAPI application. I worked with stakeholders, implemented a feedback pipeline, and documented and handed over the system to the internal team.',
     'My broader software engineering experience includes leading a team of eight engineers on Dara.af and developing production ERP and logistics systems. I work with Python, TypeScript, React, Next.js, NestJS, Laravel, PostgreSQL, and AWS, with an emphasis on maintainable architecture, testing, and practical business needs.',
   ],
