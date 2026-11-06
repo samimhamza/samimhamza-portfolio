@@ -16,22 +16,22 @@ import logoCRAG from '@/images/logos/crag.svg'
 export const personalInfo = {
   fullName: 'Ahmad Samim Hamza',
   shortName: 'Samim Hamza',
-  title: 'AI Engineer & Software Engineer',
+  title: 'Software Engineer | Applied AI',
   supportingDescriptor: 'Full-Stack Development & Applied AI',
-  heroHeadline: 'AI Engineer & Software Engineer',
+  heroHeadline: 'Software Engineer | Applied AI',
   heroSupportingLine:
-    'Building enterprise AI applications, backend services, and full-stack business systems.',
+    'Building practical AI tools, backend services, and web applications.',
   heroIntro:
-    'I build intelligent applications and the software systems around them. My experience spans enterprise RAG and multi-agent assistants, backend services, and full-stack platforms for e-commerce, logistics, and business operations. I work with Python, TypeScript, React, Next.js, PostgreSQL, and AWS, combining practical AI engineering with reliable software delivery.',
+    "I'm a software engineer based in Finland with 5 years of experience building web applications and backend systems. Recently, my work has focused on applied AI, including enterprise RAG systems, multi-agent workflows, and search pipelines on AWS. My core tools are Python, TypeScript, React, Next.js, PostgreSQL, and FastAPI.",
   aboutHeading:
-    'Samim Hamza. AI Engineer & Software Engineer building intelligent applications and reliable software systems.',
+    'Hi, I’m Samim. I’m a software engineer working with web backends, full-stack apps, and applied AI.',
   aboutIntroParagraphs: [
-    "I'm an AI Engineer and Software Engineer, currently pursuing a Master's degree in Artificial Intelligence at the University of Jyväskylä. I bring 5 years of software engineering experience across enterprise AI applications, backend services, and full-stack business platforms.",
-    'At Konecranes, I designed, evaluated, and deployed an enterprise RAG and multi-agent assistant on AWS, integrating AI backends with a Next.js and FastAPI application. I worked with stakeholders, implemented a feedback pipeline, and documented and handed over the system to the internal team.',
-    'My broader software engineering experience includes leading a team of eight engineers on Dara.af and developing production ERP and logistics systems. I work with Python, TypeScript, React, Next.js, NestJS, Laravel, PostgreSQL, and AWS, with an emphasis on maintainable architecture, testing, and practical business needs.',
+    "I'm a software engineer with 5 years of practical experience, currently studying for my Master's in Artificial Intelligence at the University of Jyväskylä in Finland. My background is rooted in building web applications, backend APIs, and internal business tools.",
+    "During my summer contract at Konecranes, I built an internal assistant to help engineers search through technical manuals and documentation. I tested different RAG setups using AWS Bedrock and LangGraph, hooked the retrieval backend up to a Next.js and FastAPI app, and gathered feedback from real users to tune search relevance and speed.",
+    "Before that, I led an 8-person engineering team on Dara.af (an e-commerce platform) and spent several years building ERP systems for logistics companies. I primarily write Python, TypeScript, PHP, and SQL, and I focus on clean architecture, practical tests, and building tools that make daily work easier.",
   ],
   aiAssistedStatement:
-    'I use Claude Code and Cursor throughout development, while retaining responsibility for architecture, code review, and testing.',
+    'I use tools like Cursor and Claude Code to speed up routine development, while handling all the system design, code reviews, and testing myself.',
   links: {
     website: 'https://www.samimhamza.com/',
     linkedin: 'https://www.linkedin.com/in/ahmadsamimhamza/',
@@ -47,25 +47,25 @@ export const personalInfo = {
 export const capabilities = [
   {
     title: 'Applied AI',
-    description: 'RAG applications, multi-agent workflows, and evaluation.',
+    description: 'RAG pipelines, multi-agent workflows, and retrieval evaluation.',
     projectLink: '/projects#enterprise-rag',
     projectLabel: 'Enterprise RAG Assistant',
   },
   {
     title: 'Backend Engineering',
-    description: 'APIs, relational data models, and business workflows.',
+    description: 'REST APIs, relational database design, and business logic.',
     projectLink: '/projects#pgl-erp',
     projectLabel: 'PGL ERP System',
   },
   {
-    title: 'Full-Stack Delivery',
-    description: 'User interfaces integrated with backend services.',
+    title: 'Full-Stack Web',
+    description: 'Clean user interfaces connected to reliable backend services.',
     projectLink: '/projects#dara-af',
     projectLabel: 'Dara.af Platform',
   },
   {
-    title: 'Cloud Delivery',
-    description: 'AWS deployment, monitoring, documentation, and handover.',
+    title: 'Cloud & Deployment',
+    description: 'Containerization, AWS deployment, CI/CD, and basic monitoring.',
     projectLink: '/projects#enterprise-rag',
     projectLabel: 'AWS Cloud Delivery',
   },
@@ -81,11 +81,11 @@ export const experience = [
     location: 'Hyvinkää, Finland',
     logo: logoKonecranes,
     bullets: [
-      'Designed, built, evaluated, and deployed an enterprise RAG and multi-agent assistant over 100+ internal XML, PDF, and XLSX documents.',
-      'Compared three RAG variants using AWS Bedrock, LangChain, and LangGraph, integrated through a shared Next.js and FastAPI application.',
-      'Implemented supervisor/collaborator agent orchestration and used PostgreSQL for user accounts, session data, and feedback storage.',
-      'Deployed on AWS Amplify, ECS, and RDS; used CloudWatch and application error tracking to investigate issues affecting retrieval quality and response latency.',
-      'Worked with domain stakeholders, documented the system, and handed it over to the internal team.',
+      'Built and deployed an internal knowledge assistant to help engineers search across 100+ technical documents (PDF, XML, and XLSX).',
+      'Tested and compared three RAG approaches using AWS Bedrock, LangChain, and LangGraph, connecting them to a shared Next.js and FastAPI web app.',
+      'Set up a multi-agent workflow for handling multi-step queries, with PostgreSQL storing user accounts and feedback.',
+      'Deployed the application to AWS (ECS, RDS, Amplify) and monitored query latency and retrieval quality using CloudWatch.',
+      'Worked directly with internal users, documented how the system works, and handed it over to the engineering team.',
     ],
   },
   {
@@ -97,9 +97,9 @@ export const experience = [
     location: 'Kabul, Afghanistan',
     logo: logoRamaki,
     bullets: [
-      'Led a team of eight engineers delivering Dara.af, an e-commerce platform supporting hundreds of product listings and daily customer orders.',
-      'Designed and optimized PostgreSQL schemas and developed RESTful APIs using Laravel.',
-      'Delivered application features using React and Next.js, wrote unit, integration, and feature tests, and conducted code reviews and mentoring.',
+      'Led an 8-person engineering team building Dara.af, an e-commerce platform handling daily orders and product catalogs.',
+      'Designed the PostgreSQL database schemas and built backend REST APIs using Laravel.',
+      'Built frontend features in React and Next.js, wrote automated unit and integration tests, and reviewed pull requests.',
     ],
   },
   {
@@ -111,9 +111,9 @@ export const experience = [
     location: 'Kabul, Afghanistan',
     logo: logoPGL,
     bullets: [
-      'Developed core ERP and logistics features using NestJS, React, Next.js, and PostgreSQL.',
-      'Designed relational data models, optimized complex queries, and built reusable React and Tailwind components.',
-      'Collaborated with logistics, finance, and operations stakeholders to translate business workflows into application features.',
+      'Built core modules for an internal ERP system handling logistics, shipments, HR, and finance.',
+      'Wrote backend services in NestJS, designed relational database schemas, and optimized SQL queries.',
+      'Created reusable frontend components with React, Next.js, and Tailwind CSS, working closely with the operations team to match their daily workflows.',
     ],
   },
   {
@@ -125,8 +125,8 @@ export const experience = [
     location: 'Kabul, Afghanistan',
     logo: logoCosmos,
     bullets: [
-      'Taught Python programming and machine learning fundamentals to first- and second-year undergraduate students.',
-      'Covered data analysis, model training, evaluation, and practical ML tooling.',
+      'Taught introductory Python programming and machine learning basics to first- and second-year undergraduate students.',
+      'Prepared practical lab assignments covering data handling, basic model training, and evaluation.',
     ],
   },
   {
@@ -138,8 +138,8 @@ export const experience = [
     location: 'Kabul, Afghanistan',
     logo: logoSmartFriqi,
     bullets: [
-      'Built ERP modules using Laravel, Nuxt.js, and PostgreSQL.',
-      'Implemented real-time features with WebSockets and developed dashboards and administration interfaces.',
+      'Developed ERP features and admin dashboards using Laravel, Nuxt.js, and PostgreSQL.',
+      'Added real-time updates using WebSockets for live status tracking.',
     ],
   },
   {
@@ -151,7 +151,7 @@ export const experience = [
     location: 'Kabul, Afghanistan',
     logo: logoTwistedBits,
     bullets: [
-      'Built two management information systems using PHP, JavaScript, Laravel, and Vue.js as part of a small team.',
+      'Built two internal management systems using PHP, Laravel, and Vue.js as part of a small team.',
     ],
   },
 ]
@@ -189,7 +189,7 @@ export const compactSkills = [
   'PostgreSQL',
   'AWS',
   'Docker',
-  'RAG & Agentic Systems',
+  'RAG & Multi-Agent Systems',
 ]
 
 export const skillCategories = [
@@ -248,7 +248,7 @@ export const skillCategories = [
     ],
   },
   {
-    title: 'Applied AI & Agentic Systems',
+    title: 'Applied AI & Search',
     skills: [
       'RAG',
       'Corrective RAG (CRAG)',
@@ -290,7 +290,7 @@ export const skillCategories = [
   {
     title: 'AI-Assisted Development',
     skills: ['Claude Code', 'Cursor', 'Antigravity'],
-    note: 'Used throughout development while retaining responsibility for architecture, code review, and testing.',
+    note: 'Used to speed up boilerplate and routine coding, while I handle system design, reviews, and tests myself.',
     relatedProjects: [
       { name: 'Enterprise RAG Assistant', href: '/projects#enterprise-rag' },
       {
@@ -300,7 +300,7 @@ export const skillCategories = [
     ],
   },
   {
-    title: 'Academic Knowledge & Familiarity',
+    title: 'Academic Coursework & Research',
     skills: [
       'Semantic Web (Ontologies, RDF, OWL, SPARQL)',
       'PyTorch',
@@ -308,7 +308,7 @@ export const skillCategories = [
       'Multi-Objective Optimization',
       'Kubernetes',
     ],
-    note: 'Academic coursework and thesis research; separated from production implementations.',
+    note: 'Studied through university coursework and thesis research, distinct from commercial production experience.',
   },
 ]
 
@@ -319,7 +319,7 @@ export const projects = [
     date: '05/2026 – 08/2026',
     context: 'Konecranes, professional project',
     description:
-      'Designed and deployed an internal enterprise knowledge assistant over 100+ XML, PDF, and XLSX documents. Compared three RAG variants behind a shared Next.js and FastAPI interface, implemented multi-agent orchestration and PostgreSQL feedback storage, and deployed the application on AWS with CloudWatch monitoring.',
+      'An internal knowledge assistant built for Konecranes to help staff search through 100+ technical documents (PDFs, spreadsheets, and XML files). I compared three different RAG architectures behind a Next.js and FastAPI interface, added a user feedback loop in PostgreSQL, and deployed the stack on AWS.',
     logo: logoKonecranes,
     tags: [
       'Python',
@@ -336,16 +336,16 @@ export const projects = [
     featured: true,
     caseStudy: {
       problem:
-        'Enterprise internal knowledge discovery across 100+ heterogeneous technical documents (XML, PDF, XLSX) for internal engineering and operations workflows.',
-      role: 'Designed, built, evaluated, and deployed the system as Software Development Specialist (AI/ML). Collaborated with domain stakeholders and handed over to the internal team.',
+        'Engineers and operational staff spent too much time manually digging through over 100 internal manuals, spreadsheets, and XML specs to find technical details.',
+      role: 'Software Development Specialist (AI/ML). I handled the research, backend implementation, UI integration, deployment, and documentation.',
       architecture:
-        'Next.js conversational frontend connecting to a FastAPI backend. Backends explored AWS Bedrock (Agents, AgentCore), LangChain, and LangGraph. Documents indexed in an S3-based vector store; relational PostgreSQL handled user accounts, sessions, and evaluation feedback storage.',
+        'A Next.js chat frontend connected to a FastAPI backend. The retrieval system tested AWS Bedrock, LangChain, and LangGraph pipelines reading from an S3 document store. PostgreSQL handled authentication, chat history, and thumbs up/down user feedback.',
       decisions:
-        'Benchmarked three RAG variants behind a shared conversational UI to evaluate retrieval latency and response quality. Implemented supervisor/collaborator agent orchestration for task delegation.',
+        'Rather than picking one RAG framework blindly, I built a switchable backend to test AWS Bedrock against LangChain and LangGraph directly with users. I also added a supervisor agent to split complex, multi-part questions into simpler search steps.',
       evaluation:
-        'Deployed on AWS Amplify, ECS, and RDS. Implemented a PostgreSQL-backed human evaluation pipeline and used CloudWatch with application error tracking to resolve retrieval quality and latency bottlenecks.',
+        'Deployed the app to AWS (ECS and RDS) and tracked query times in CloudWatch. Collected user feedback on answer accuracy to tune chunk sizes and retrieval prompts.',
       outcome:
-        'Fully documented the system and handed it over to the internal engineering team.',
+        'Delivered a working internal tool with complete setup documentation, and handed it off to the internal development team at the end of the contract.',
     },
   },
   {
@@ -355,7 +355,7 @@ export const projects = [
     context:
       'Open-source library · Master’s Thesis R&D, University of Jyväskylä',
     description:
-      'Engineered and open-sourced a production-grade Corrective RAG (CRAG) and hybrid retrieval engine in Python. Combines Okapi BM25 sparse retrieval, dense cosine vector search, Reciprocal Rank Fusion (RRF), and ONNX-accelerated cross-encoder reranking with self-reflective confidence grading and automated query reformulation. Includes an end-to-end GitHub Actions CI pipeline executing Ruff linting, formatting checks, Mypy static typing, and Pytest suites on every push.',
+      'An open-source Python library for hybrid search and retrieval. It combines BM25 keyword search, dense vector embeddings, and cross-encoder reranking to find relevant documents even when queries contain exact codes or uncommon terms. It also includes basic self-check logic to filter out irrelevant passages before passing them to an LLM.',
     link: {
       href: 'https://github.com/samimhamza/crag-hybrid-retriever',
       label: 'github.com/samimhamza/crag-hybrid-retriever',
@@ -376,16 +376,16 @@ export const projects = [
     featured: true,
     caseStudy: {
       problem:
-        'Standard single-pass RAG pipelines suffer from vocabulary mismatch (missing exact statutory codes, acronyms, or numeric thresholds) and passive hallucination (passing ambiguous passages directly to generative models without validation). Decoupled from ongoing Master’s thesis research on multi-objective optimization and regulatory compliance verification to serve as an independent, domain-agnostic retrieval engine.',
-      role: 'Sole Author & Maintainer. Architected, implemented, documented, and tested the library end-to-end in Python 3.10–3.12.',
+        'Standard vector search often fails when queries contain exact product numbers, legal codes, or specific abbreviations. At the same time, passing poorly matched documents straight into an LLM often causes hallucinated answers.',
+      role: 'Creator and maintainer. I designed and wrote the library in Python, added tests, set up GitHub Actions CI, and published it on GitHub.',
       architecture:
-        'Dual-track candidate retrieval using Okapi BM25 (token-level lexical index with NFKD normalization) and in-memory cosine dense vector search; rank distribution fusion via Reciprocal Rank Fusion (RRF, k=60); second-stage neural reranking via ONNX-accelerated cross-encoders (FlashRank); and a self-reflective Corrective RAG (CRAG) decision engine with multi-iteration query reformulation.',
+        'Two-stage retrieval: BM25 handles keyword matching and an in-memory vector store handles semantic search. Results are merged using Reciprocal Rank Fusion (RRF) and re-scored with a lightweight cross-encoder (FlashRank). A grading step checks if retrieved passages are actually relevant before final output.',
       decisions:
-        'Selected RRF over weighted linear interpolation to eliminate manual hyperparameter tuning across disparate scoring spaces. Added FlashRank cross-attention with a deterministic token-overlap fallback to ensure zero-crash resiliency in offline environments. Integrated an automated GitHub Actions CI pipeline running Ruff linting/formatting, Mypy type-checking, and Pytest coverage on every push to enforce production packaging standards.',
+        'Used Reciprocal Rank Fusion (RRF) so keyword and vector scores could be combined without having to manually tune weight parameters. Kept the library lightweight with minimal heavy dependencies so it can run quickly on CPU without requiring an external service.',
       evaluation:
-        'Built-in Information Retrieval evaluation suite calculating Precision@K, Recall@K, Mean Reciprocal Rank (MRR), and NDCG@K against ground-truth relevance sets. Covered by automated unit test suites in pytest and verified through deterministic uv environment builds.',
+        'Evaluated retrieval quality using standard metrics (Precision, Recall, MRR, NDCG) against sample test datasets. Automated the test suite with Pytest, Ruff, and Mypy on every GitHub commit.',
       outcome:
-        'Published open-source library on GitHub with comprehensive documentation, interactive quickstarts, CI build automation, and academic citation metadata.',
+        'Published on GitHub with documentation, example notebooks, and automated CI tests.',
     },
   },
   {
@@ -394,7 +394,7 @@ export const projects = [
     date: '05/2024 – 07/2025',
     context: 'Ramaki Group of Companies, professional project',
     description:
-      'Led a team of eight engineers delivering a production e-commerce platform supporting hundreds of product listings and daily customer orders. Contributed to PostgreSQL schema design, REST API development, full-stack implementation, testing, and code review.',
+      'An e-commerce marketplace built for the Afghan market, supporting hundreds of product listings and daily consumer orders. I led the development team, designed the PostgreSQL database, and built backend APIs and frontend features.',
     link: {
       href: 'https://dara.af/',
       label: 'dara.af',
@@ -405,16 +405,16 @@ export const projects = [
     featured: true,
     caseStudy: {
       problem:
-        'Delivering a production e-commerce marketplace platform supporting product catalogs, order processing, and merchant administration.',
+        'Building a reliable local e-commerce store with product catalogs, shopping carts, order tracking, and merchant administration for an emerging retail market.',
       role: 'Senior Software Engineer leading a team of eight engineers; led PostgreSQL schema design, RESTful API development, feature implementation, and developer mentoring.',
       architecture:
         'Laravel RESTful API backend, PostgreSQL relational database, and responsive React / Next.js user interfaces.',
       decisions:
-        'Designed normalized PostgreSQL schemas for transactional integrity across orders, stock, and listings; established comprehensive automated test requirements.',
+        'Prioritized database constraints and transactions to avoid inventory mismatches during peak order times. Established code review guidelines and automated tests before code was merged to production.',
       evaluation:
-        'Wrote unit, integration, and feature tests; conducted structured code reviews and developer mentorship before production releases.',
+        'Tested all checkout and order flows with unit and integration tests, and conducted manual QA before releases.',
       outcome:
-        'Successfully delivered and operated production e-commerce platform supporting daily customer transactions.',
+        'Successfully launched and ran the store, serving daily orders and regular product updates from local merchants.',
     },
   },
   {
@@ -423,7 +423,7 @@ export const projects = [
     date: '09/2022 – 04/2024',
     context: 'Peace Global Logistics, professional project',
     description:
-      'Developed logistics, shipment, HR, finance, and inventory features for an enterprise ERP platform. Built APIs, designed PostgreSQL schemas, optimized queries, and implemented interfaces using NestJS, React, and Next.js.',
+      'An internal ERP system for a logistics company, managing international shipments, warehouse inventory, HR, and finance workflows. Built with NestJS, React, Next.js, and PostgreSQL.',
     link: {
       href: 'https://pglsystem.com/',
       label: 'pglsystem.com',
@@ -434,16 +434,16 @@ export const projects = [
     featured: true,
     caseStudy: {
       problem:
-        'Coordinating multi-department logistics, shipment handling, HR, inventory, and finance operations across company-wide branches.',
+        'The company was managing shipments, customs clearances, warehouse stock, and accounting across different spreadsheets and paper forms, leading to lost time and data entry errors.',
       role: 'Software Engineer responsible for API development, database architecture, query optimization, and UI implementation.',
       architecture:
         'NestJS modular backend services, PostgreSQL database, React and Next.js frontend interfaces with Tailwind CSS styling.',
       decisions:
-        'Structured relational data models for multi-department workflows and optimized complex SQL queries for operational reporting.',
+        'Modeled the database around real shipment milestones so staff could trace a container from pickup to delivery, and added indexes on high-traffic tables to keep reporting queries fast.',
       evaluation:
-        'Collaborated directly with logistics, finance, and operations stakeholders to translate business workflows into tested software features.',
+        'Worked directly with warehouse staff and accountants to test new modules on real shipment data before rolling them out across the company.',
       outcome:
-        'Delivered dependable enterprise ERP infrastructure supporting daily business operations across departments.',
+        'Replaced disconnected spreadsheets with a central system used daily by operations, logistics, and finance staff.',
     },
   },
   {
@@ -452,7 +452,7 @@ export const projects = [
     date: '2026',
     context: 'University of Jyväskylä, academic project',
     description:
-      'Built a domain-specific RAG application using publicly available health information. Implemented web scraping, document chunking, ChromaDB indexing, and retrieval and answer-quality evaluation.',
+      'A small academic project exploring RAG on public health articles. I built a scraper to collect articles, indexed them in ChromaDB, and tested how different chunk sizes and similarity thresholds affected answer quality.',
     logo: logoPlanetaria,
     tags: [
       'Python',
@@ -466,25 +466,25 @@ export const projects = [
     featured: false,
     caseStudy: {
       problem:
-        'Academic research project exploring conversational retrieval and answer quality over publicly available health information articles. (Academic project; not for clinical diagnosis or medical advice).',
-      role: 'Sole engineer responsible for web scraping, embedding pipeline, vector store indexing, and evaluation.',
+        'A coursework experiment to see how well small, local RAG pipelines retrieve accurate context from non-technical medical articles without introducing misleading answers. (Academic project; not for clinical diagnosis or medical advice).',
+      role: 'Solo student project. I wrote the scraper, embedding scripts, search logic, and evaluation tests.',
       architecture:
-        'Python scraping and chunking pipeline, ChromaDB vector store, and LLM-powered retrieval interface.',
+        'Python scripts for scraping and text chunking, ChromaDB for vector storage, and an LLM integration for question answering.',
       decisions:
-        'Compared chunking strategies and semantic similarity thresholds to assess answer relevance and hallucination reduction.',
+        'Tested small chunks (300 tokens) versus medium chunks (800 tokens) with overlap to find the best balance between retrieval accuracy and context completeness.',
       evaluation:
-        'Conducted retrieval accuracy and answer quality evaluation using LLM evaluation techniques against curated test questions.',
+        'Created a set of test questions with known answers and evaluated retrieval recall and answer relevance manually and with LLM evaluation prompts.',
       outcome:
-        'Demonstrated practical domain-specific RAG pipeline construction and empirical retrieval evaluation in an academic setting.',
+        'Completed the coursework project and documented findings on chunk size trade-offs in question-answering systems.',
     },
   },
   {
     id: 'freight-logistics-erp',
     name: 'Freight Forwarding & Logistics ERP System',
     date: '08/2026 – 10/2026',
-    context: 'Freelance, end-to-end ownership',
+    context: 'Freelance client project',
     description:
-      'Architected, developed, and deployed a full-scale cloud ERP for international freight forwarding and customs clearance logistics. Engineered end-to-end Master/House Bill of Lading workflows, multi-container tracking with VIN-level vehicle manifests, automated tax-compliant PDF generation, dual-ledger accounting, and role-based access control.',
+      'A web-based logistics and billing application built for an international freight forwarder. It handles Bills of Lading, container manifests, customer invoicing, and expense tracking.',
     link: {
       href: 'https://amirsahra.com/',
       label: 'amirsahra.com',
@@ -504,16 +504,16 @@ export const projects = [
     featured: false,
     caseStudy: {
       problem:
-        'International ocean freight forwarders and cargo clearing agencies often rely on fragmented spreadsheets, disconnected accounting software, and manual email notifications, resulting in documentation errors, delayed arrival notices, and poor visibility into shipment profit margins. Primary users include vessel consolidation coordinators, port clearance agents, and finance officers.',
-      role: 'Sole Architect & Full-Stack Developer (AI-assisted with Antigravity and Cursor). Owned end-to-end development, deployment, and ongoing maintenance: designed relational data architecture, business logic, automated document rendering engines, and test suites.',
+        'A freight forwarding business needed a simple, unified system to generate Bills of Lading, track cargo containers, and manage invoices without relying on messy Excel sheets.',
+      role: 'Solo developer (freelance). I designed the database, implemented the application logic, created PDF invoice templates, and deployed the system to production.',
       architecture:
-        'Laravel 13, Filament v5, and Livewire v4 reactive operations panel backed by PostgreSQL. Implements Master/House Bill of Lading hierarchies, container allocations, server-side PDF document generation (Spatie PDF/DomPDF), automated transactional emailing via Resend, and dual-ledger accounting.',
+        'Built with Laravel, Filament, and Livewire on top of a PostgreSQL database. Uses Spatie packages for role permissions and server-side PDF generation for invoices and shipping documents.',
       decisions:
-        'Adopted unified Filament v5 + Livewire architecture over a detached SPA to eliminate API boilerplate and ensure tight Eloquent database transactions. Implemented server-side PDF rendering for deterministic invoice/B/L generation and linked carrier remittances to client invoices for real-time shipment margin tracking.',
+        'Used Filament to build the administration panels quickly so more time could be spent getting the complex shipping and invoicing calculations right. Chose server-side PDF generation so that printed documents always match official customs layouts.',
       evaluation:
-        'Built comprehensive PHPUnit 11 feature test suite covering invoice lifecycles, payment reconciliations, PDF rendering, and role permissions (Filament Shield / Spatie Permission). Enforced PSR-12 code quality with Laravel Pint and deployed production environment at amirsahra.com.',
+        'Wrote PHPUnit tests for the invoicing and balance-tracking logic to ensure currency conversions and totals were accurate. Tested directly with the client before going live.',
       outcome:
-        'Delivered, deployed, and maintain a self-contained, enterprise-grade cloud logistics ERP running on amirsahra.com, reducing document issuance time from hours to seconds and providing real-time visibility into operational cash flows.',
+        'Deployed to production and actively used by the client for daily shipping documentation and invoicing.',
     },
   },
   {
@@ -522,7 +522,7 @@ export const projects = [
     date: '08/2023 – 12/2023',
     context: 'Peace Global Logistics',
     description:
-      'Built a website and management information system using Node.js and Express for the backend, React for the frontend, and PostgreSQL for data storage.',
+      'A product catalog and management system for an equipment supplier. Built with Node.js, Express, React, and PostgreSQL.',
     link: {
       href: 'https://tglsupplies.com/',
       label: 'tglsupplies.com',
@@ -538,7 +538,7 @@ export const projects = [
     date: '2022 – 2023',
     context: 'Peace Global Logistics',
     description:
-      'Full website and management information system for a used car trading company. Built with Laravel, Next.js, Material UI, and MySQL.',
+      'A website and inventory management system for a used car dealership. Built with Laravel, Next.js, Material UI, and MySQL.',
     link: {
       href: 'https://unitedtradingcars.com/',
       label: 'unitedtradingcars.com',
@@ -554,7 +554,7 @@ export const projects = [
     date: '2022',
     context: 'Non-profit client project',
     description:
-      'Charity management system built for an Afghanistan-based non-profit organization.',
+      'An open-source administration tool built for a local non-profit organization to track donations and relief distribution. Built with React and Mantine UI.',
     link: {
       href: 'https://github.com/samimhamza/gpf_frontend_mantine',
       label: 'github.com',
@@ -570,7 +570,7 @@ export const projects = [
     date: '08/2021 – 05/2022',
     context: 'Smart Friqi',
     description:
-      'ERP system for TeebAlhoor, a UAE-based trading company, built with Laravel, Nuxt.js, and PostgreSQL.',
+      'An inventory and sales management tool built for a regional trading company using Laravel, Nuxt.js, and PostgreSQL.',
     link: {
       href: 'https://github.com/samimhamza/teebalhoorfrontend',
       label: 'github.com',
@@ -586,7 +586,7 @@ export const projects = [
     date: '2023',
     context: 'Peace Global Logistics',
     description:
-      'Department website for the tech division of Peace Global Logistics.',
+      'A website built for the technology branch of Peace Global Logistics using Next.js, React, and Tailwind CSS.',
     link: {
       href: 'https://peaceglobaltech.com/',
       label: 'peaceglobaltech.com',

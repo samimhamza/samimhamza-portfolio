@@ -7,14 +7,14 @@ export { projects }
 export const metadata = {
   title: 'Projects',
   description:
-    'Applied AI, enterprise RAG, backend services, and full-stack platforms built by Ahmad Samim Hamza.',
+    'Projects built by Ahmad Samim Hamza, spanning applied AI, search systems, internal business tools, and web applications.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Selected Projects"
-      intro="Applied AI, enterprise RAG, backend services, and full-stack business systems. From internal enterprise knowledge assistants and multi-agent orchestration to e-commerce and logistics platforms."
+      title="Projects"
+      intro="A collection of projects I've built, including internal knowledge tools, open-source libraries, and full-stack web applications."
     >
       <ProjectList projects={projects} />
     </SimpleLayout>

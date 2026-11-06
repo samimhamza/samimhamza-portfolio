@@ -1,26 +1,26 @@
-# Ahmad Samim Hamza — Personal Portfolio & Engineering Showcase
+# Ahmad Samim Hamza — Personal Portfolio
 
 [![Live Website](https://img.shields.io/badge/Live%20Website-samimhamza.com-0284c7?style=flat&logo=google-chrome&logoColor=white)](https://www.samimhamza.com/)
 [![Built with Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4-38bdf8?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-Tailwind%20UI-emerald.svg)](LICENSE.md)
 
-The production codebase for [samimhamza.com](https://www.samimhamza.com/), the personal portfolio and engineering case-study showcase of **Ahmad Samim Hamza**, AI Engineer & Software Engineer.
+Source code for [samimhamza.com](https://www.samimhamza.com/), the personal portfolio of **Ahmad Samim Hamza** (Software Engineer | Applied AI).
 
 ---
 
-## 🌟 Highlights & Architecture
+## Overview
 
-- **Next.js 14 App Router**: Hybrid server and client component architecture with fully optimized static page generation.
-- **Centralized Data Layer (`src/data/portfolio.js`)**: Single source of truth driving career timelines, education, technical skills, and project case studies across all pages to prevent content drift.
-- **Interactive Project Case Studies**: Expandable project deep dives with problem definitions, architectural components, engineering trade-offs, and evaluation details.
-- **Dynamic Category Filtering**: Client-side filtering across capabilities (_AI & GenAI_, _Full-Stack_, _Backend & Business Systems_).
-- **Responsive Dark/Light Mode**: Smooth theme transitions via `next-themes` and Tailwind CSS.
-- **Accessible & SEO-Optimized**: OpenGraph metadata, accessible semantic HTML, keyboard-navigable controls, and automated `/cv` routing.
+- **Next.js 14 App Router**: Server and client components with static page generation.
+- **Centralized Content (`src/data/portfolio.js`)**: All experience, education, skills, and project details live in one file so updates stay in sync across pages.
+- **Project Case Studies**: Expandable project cards covering the problem, architecture, key decisions, testing, and outcome.
+- **Category Filtering**: Client-side filtering across project categories (_Applied AI_, _Full-Stack_, _Backend & Systems_).
+- **Dark / Light Mode**: Theme switching using `next-themes` and Tailwind CSS.
+- **SEO & Accessibility**: OpenGraph metadata, semantic HTML, and `/cv` routing.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
 - **Library**: [React 18](https://react.dev/)
@@ -32,7 +32,7 @@ The production codebase for [samimhamza.com](https://www.samimhamza.com/), the p
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 samimhamza-portfolio/
@@ -42,23 +42,23 @@ samimhamza-portfolio/
 │   │   ├── layout.jsx       # Root layout, global SEO metadata & OpenGraph
 │   │   ├── page.jsx         # Home page (Hero, Capabilities, Featured Projects, Experience)
 │   │   ├── about/           # About page (Bio, Experience, Education, Languages)
-│   │   ├── projects/        # Selected Projects page
-│   │   └── skills/          # Technical skills & capabilities breakdown
+│   │   ├── projects/        # Projects page
+│   │   └── skills/          # Technical skills breakdown
 │   ├── components/          # Reusable UI components (Header, Footer, Card, ProjectList)
 │   ├── data/
-│   │   └── portfolio.js     # Unified data source for projects, career & skills
-│   ├── images/              # Optimized avatars and company/project logos
+│   │   └── portfolio.js     # Central data file for projects, career & skills
+│   ├── images/              # Avatars and company/project logos
 │   └── styles/              # Global styles and Tailwind imports
 └── next.config.mjs          # Next.js configuration and redirect rules
 ```
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18.17 or higher recommended)
+- [Node.js](https://nodejs.org/) (v18.17 or higher)
 - `npm`
 
 ### Installation
@@ -91,19 +91,19 @@ samimhamza-portfolio/
 
 ---
 
-## 🧪 Available Scripts
+## Scripts
 
-- `npm run dev`: Starts the Next.js local development server.
-- `npm run build`: Compiles and generates an optimized production build.
-- `npm run start`: Starts the local production server.
-- `npm run lint`: Runs ESLint checks across the codebase.
+- `npm run dev`: Starts the local development server.
+- `npm run build`: Builds the application for production.
+- `npm run start`: Starts the production server locally.
+- `npm run lint`: Runs ESLint checks.
 
 ---
 
-## 👤 Author
+## Author
 
 **Ahmad Samim Hamza**  
-_AI Engineer & Software Engineer_
+_Software Engineer | Applied AI_
 
 - **Website**: [samimhamza.com](https://www.samimhamza.com/)
 - **LinkedIn**: [linkedin.com/in/ahmadsamimhamza](https://www.linkedin.com/in/ahmadsamimhamza/)

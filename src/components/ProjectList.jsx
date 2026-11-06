@@ -33,9 +33,9 @@ function ChevronDownIcon(props) {
 
 const CATEGORIES = [
   { id: 'all', label: 'All' },
-  { id: 'ai', label: 'AI & GenAI' },
+  { id: 'ai', label: 'Applied AI' },
   { id: 'fullstack', label: 'Full-Stack' },
-  { id: 'backend', label: 'Backend & Business Systems' },
+  { id: 'backend', label: 'Backend & Systems' },
 ]
 
 export function ProjectList({ projects }) {

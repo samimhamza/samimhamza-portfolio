@@ -9,10 +9,10 @@ export const metadata = {
   ),
   title: {
     template: '%s | Ahmad Samim Hamza',
-    default: 'Ahmad Samim Hamza | AI Engineer & Software Engineer',
+    default: 'Ahmad Samim Hamza | Software Engineer | Applied AI',
   },
   description:
-    'Portfolio of Ahmad Samim Hamza, an AI Engineer and Software Engineer building enterprise AI applications, backend services, and full-stack platforms.',
+    'Portfolio of Ahmad Samim Hamza, a Software Engineer specializing in Applied AI. 5 years of experience building web backends, APIs, and practical AI systems.',
   alternates: {
     types: {
       'application/rss+xml': `${
@@ -21,9 +21,9 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: 'Ahmad Samim Hamza | AI Engineer & Software Engineer',
+    title: 'Ahmad Samim Hamza | Software Engineer | Applied AI',
     description:
-      'Portfolio of Ahmad Samim Hamza, an AI Engineer and Software Engineer building enterprise AI applications, backend services, and full-stack platforms.',
+      'Portfolio of Ahmad Samim Hamza, a Software Engineer specializing in Applied AI. 5 years of experience building web backends, APIs, and practical AI systems.',
     url: 'https://www.samimhamza.com',
     siteName: 'Ahmad Samim Hamza',
     locale: 'en_US',

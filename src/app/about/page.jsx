@@ -50,7 +50,7 @@ function MailIcon(props) {
 export const metadata = {
   title: 'About',
   description:
-    'Ahmad Samim Hamza — AI Engineer & Software Engineer building intelligent applications and reliable software systems.',
+    'About Ahmad Samim Hamza — Software Engineer specializing in Applied AI with 5 years of experience in web backends, APIs, and practical AI systems.',
 }
 
 export default function About() {
