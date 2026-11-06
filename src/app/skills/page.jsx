@@ -6,7 +6,7 @@ import { skillCategories } from '@/data/portfolio'
 export const metadata = {
   title: 'Skills',
   description:
-    'Technical skills across backend engineering, applied AI, web development, databases, and cloud tools.',
+    'Technical skills across applied AI, RAG & multi-agent systems, backend engineering, web development, databases, and cloud tools.',
 }
 
 function ArrowUpRightIcon(props) {
@@ -26,7 +26,7 @@ export default function Skills() {
   return (
     <SimpleLayout
       title="Skills & Technologies"
-      intro="An overview of the tools, languages, and frameworks I use day-to-day, from backend APIs and databases to applied AI and frontend interfaces."
+      intro="An overview of the tools, languages, and frameworks I use day-to-day, from RAG pipelines and multi-agent systems to backend APIs, databases, and frontend interfaces."
     >
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         {skillCategories.map((category) => (

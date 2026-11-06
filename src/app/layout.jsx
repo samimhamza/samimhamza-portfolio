@@ -12,7 +12,7 @@ export const metadata = {
     default: 'Ahmad Samim Hamza | Software Engineer | Applied AI',
   },
   description:
-    'Portfolio of Ahmad Samim Hamza, a Software Engineer specializing in Applied AI. 5 years of experience building web backends, APIs, and practical AI systems.',
+    'Portfolio of Ahmad Samim Hamza, a Software Engineer specializing in Applied AI. 5 years of experience building RAG & multi-agent systems, backend APIs, and full-stack web applications.',
   alternates: {
     types: {
       'application/rss+xml': `${
@@ -23,7 +23,7 @@ export const metadata = {
   openGraph: {
     title: 'Ahmad Samim Hamza | Software Engineer | Applied AI',
     description:
-      'Portfolio of Ahmad Samim Hamza, a Software Engineer specializing in Applied AI. 5 years of experience building web backends, APIs, and practical AI systems.',
+      'Portfolio of Ahmad Samim Hamza, a Software Engineer specializing in Applied AI. 5 years of experience building RAG & multi-agent systems, backend APIs, and full-stack web applications.',
     url: 'https://www.samimhamza.com',
     siteName: 'Ahmad Samim Hamza',
     locale: 'en_US',

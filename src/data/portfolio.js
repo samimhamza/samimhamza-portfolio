@@ -20,11 +20,11 @@ export const personalInfo = {
   supportingDescriptor: 'Full-Stack Development & Applied AI',
   heroHeadline: 'Software Engineer | Applied AI',
   heroSupportingLine:
-    'Building practical AI tools, backend services, and web applications.',
+    'Building RAG & multi-agent systems, backend services, and full-stack web applications.',
   heroIntro:
-    "I'm a software engineer based in Finland with 5 years of experience building web applications and backend systems. Recently, my work has focused on applied AI, including enterprise RAG systems, multi-agent workflows, and search pipelines on AWS. My core tools are Python, TypeScript, React, Next.js, PostgreSQL, and FastAPI.",
+    "I'm a software engineer based in Finland with 5 years of experience building web applications and backend systems. Recently, my work has focused on applied AI, including enterprise RAG systems, multi-agent workflows, and hybrid search pipelines on AWS. My core tools are Python, TypeScript, React, Next.js, PostgreSQL, and FastAPI.",
   aboutHeading:
-    'Hi, I’m Samim. I’m a software engineer working with web backends, full-stack apps, and applied AI.',
+    'Hi, I’m Samim. I’m a software engineer building RAG & multi-agent systems, backend APIs, and full-stack web applications.',
   aboutIntroParagraphs: [
     "I'm a software engineer with 5 years of practical experience, currently studying for my Master's in Artificial Intelligence at the University of Jyväskylä in Finland. My background is rooted in building web applications, backend APIs, and internal business tools.",
     "During my summer contract at Konecranes, I built an internal assistant to help engineers search through technical manuals and documentation. I tested different RAG setups using AWS Bedrock and LangGraph, hooked the retrieval backend up to a Next.js and FastAPI app, and gathered feedback from real users to tune search relevance and speed.",
@@ -248,11 +248,12 @@ export const skillCategories = [
     ],
   },
   {
-    title: 'Applied AI & Search',
+    title: 'Applied AI, RAG & Multi-Agent Systems',
     skills: [
       'RAG',
       'Corrective RAG (CRAG)',
       'Multi-Agent Systems',
+      'Agentic Workflows',
       'LangChain',
       'LangGraph',
       'AWS Bedrock',
